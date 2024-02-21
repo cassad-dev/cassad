@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import bgImage from "../public/images.png";
+import bgImage from "../public/home2.png";
 
 export default function Home() {
 
@@ -15,6 +15,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
 
+
+      {/* NAVBAR */}
       <nav className="border-b-2 border-slate-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -33,17 +35,17 @@ export default function Home() {
           <div className={`w-full md:block md:w-auto ${isMenuOpen ? '' : 'hidden'}`} id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
               <li>
-                <a href="#" className="block py-2 px-3 text-white bg-mainAzul-100 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">
+                <a href="#" className="block py-2 px-3 text-white bg-mainAzul-100 rounded md:rounded-none md:bg-transparent md:text-blue-700 hover:text-blue-700 md:p-0 border-b-2 border-transparent md:hover:border-b-2 md:hover:border-blue-700" aria-current="page">
                   Conócenos
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded md:rounded-none hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 border-b-2 border-transparent md:hover:border-b-2 md:hover:border-blue-700">
                   Servicios
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <a href="#" className="block py-2 px-3 text-gray-900 rounded md:rounded-none hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 border-b-2 border-transparent md:hover:border-b-2 md:hover:border-blue-700">
                   Administración
                 </a>
               </li>
@@ -52,7 +54,236 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="mb-10">
+
+      {/* FOTO background y TEXTO */}
+      <section
+        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600"
+        style={{
+          backgroundImage: `url(${bgImage.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          // opacity: "0.5",
+          height: "70vh",
+        }}
+      >
+        <div className="px-4 mx-auto max-w-screen-xl text-center flex flex-col items-center justify-center h-full">
+          <h1 className="mb-4 text-6xl font-extrabold tracking-tight leading-none text-white">
+            Administración en el ámbito <span className="text-slate-400">legal</span> y <span className="text-slate-400">tecnológico</span>          </h1>
+          <p className="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum suscipit tenetur eligendi aut. Labore, veniam a ex quia magni soluta quos ipsam eos aut?
+          </p>
+          {/* <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-mainAzul-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+              Get started
+              <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+            <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              Learn more
+            </a>
+          </div> */}
+        </div>
+      </section>
+
+
+      {/* CONTACTO */}
+      <div className="w-full mx-auto md:px-6 bg-slate-200">
+        <section>
+          <div className="px-6 md:px-12">
+            <div
+              className="block rounded-lg px-6 py-12 md:px-12">
+              <div className="grid gap-x-6 grid-cols-2 lg:grid-cols-4">
+
+                <div className="mx-auto mb-6 text-center lg:mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <h6 className="font-medium">Monterrey, México</h6>
+                </div>
+
+                <div className="mx-auto mb-6 text-center lg:mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                  <h6 className="font-medium">contacto@cassad.com</h6>
+                </div>
+
+                <div className="mx-auto mb-6 text-center md:mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                  </svg>
+                  <h6 className="font-medium">+52 (81) 1669 0664</h6>
+                </div>
+
+                <div className="mx-auto text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                  </svg>
+                  <h6 className="font-medium">Tax ID: 273 384</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      {/* HERO con FOTO */}
+      <div className="relative pb-[110px] pt-16">
+        <div className="">
+          <div className="flex flex-wrap">
+
+            <div className="w-full px-20 text-center mx-auto lg:text-left lg:w-6/12 lg:flex lg:items-center">
+              <div className="hero-content">
+                <Image
+                  src="/logos/logo_azul.png"
+                  alt="logo azul"
+                  className="mb-8 mx-auto lg:mx-0"
+                  height={130}
+                  width={390}
+                ></Image>
+                {/* <h1 className="mb-10 text-6xl font-bold tracking-tight">
+                  Administración <br /> en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
+                </h1> */}
+                <p className="mb-8 max-w-[480px] text-xl text-body-color mx-auto lg:mx-0">
+                  Nos diferenciamos en soluciones y opiniones de diagnóstico profundo y oportuno con responsabilidad multidisciplinarias, conectando con los clientes de una manera emocional y sentido de pertenencia.
+                </p>
+                <ul className="flex flex-wrap mx-auto justify-center lg:justify-normal">
+                  <li>
+                    <a
+                      href="/#"
+                      className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7"
+                    >
+                      Get Started
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/#"
+                      className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-blue-500"
+                    >
+                      <span className="mr-2">
+                        <svg
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12.6152" r="12" fill="#0c4068" />
+                          <rect
+                            x="7.99893"
+                            y="14.979"
+                            width="8.18182"
+                            height="1.63636"
+                            fill="white"
+                          />
+                          <rect
+                            x="11.2717"
+                            y="7.61523"
+                            width="1.63636"
+                            height="4.09091"
+                            fill="white"
+                          />
+                          <path
+                            d="M12.0898 14.1606L14.9241 11.0925H9.25557L12.0898 14.1606Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      Download App
+                    </a>
+                  </li>
+                </ul>
+                {/* <div className="clients pt-16">
+                  <h6 className="mb-6 flex items-center text-md font-normal text-body-color justify-center lg:justify-normal">
+                    Algunos de nuestros clientes:
+                  </h6>
+
+                  <div className="flex space-x-4">
+
+                    <a href={'#'} className="flex w-full items-center justify-center">
+                      <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg'} alt="brand image" className="h-10 w-full" />
+                    </a>
+
+                    <a href={'#'} className="flex w-full items-center justify-center">
+                      <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg'} alt="brand image" className="h-10 w-full" />
+                    </a>
+
+                    <a href={'#'} className="flex w-full items-center justify-center">
+                      <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg'} alt="brand image" className="h-10 w-full" />
+                    </a>
+
+                  </div>
+                </div> */}
+              </div>
+            </div>
+
+            <div className="w-full px-4 lg:w-6/12 mx-auto">
+              <div className="lg:ml-auto lg:text-right">
+                <div className="relative z-10 inline-block pt-11 lg:pt-0">
+                  <img
+                    src="/home.jpg"
+                    alt="hero"
+                    className="lg:ml-auto rounded-lg mx-auto"
+                    style={{ borderTopLeftRadius: "100px", width: "90%" }}
+                  />
+                  <span className="absolute -bottom-8 -left-8 z-[-1]">
+                    <svg
+                      width="93"
+                      height="93"
+                      viewBox="0 0 93 93"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2.5" cy="2.5" r="2.5" fill="#0c4068" />
+                      <circle cx="2.5" cy="24.5" r="2.5" fill="#0c4068" />
+                      <circle cx="2.5" cy="46.5" r="2.5" fill="#0c4068" />
+                      <circle cx="2.5" cy="68.5" r="2.5" fill="#0c4068" />
+                      <circle cx="2.5" cy="90.5" r="2.5" fill="#0c4068" />
+                      <circle cx="24.5" cy="2.5" r="2.5" fill="#0c4068" />
+                      <circle cx="24.5" cy="24.5" r="2.5" fill="#0c4068" />
+                      <circle cx="24.5" cy="46.5" r="2.5" fill="#0c4068" />
+                      <circle cx="24.5" cy="68.5" r="2.5" fill="#0c4068" />
+                      <circle cx="24.5" cy="90.5" r="2.5" fill="#0c4068" />
+                      <circle cx="46.5" cy="2.5" r="2.5" fill="#0c4068" />
+                      <circle cx="46.5" cy="24.5" r="2.5" fill="#0c4068" />
+                      <circle cx="46.5" cy="46.5" r="2.5" fill="#0c4068" />
+                      <circle cx="46.5" cy="68.5" r="2.5" fill="#0c4068" />
+                      <circle cx="46.5" cy="90.5" r="2.5" fill="#0c4068" />
+                      <circle cx="68.5" cy="2.5" r="2.5" fill="#0c4068" />
+                      <circle cx="68.5" cy="24.5" r="2.5" fill="#0c4068" />
+                      <circle cx="68.5" cy="46.5" r="2.5" fill="#0c4068" />
+                      <circle cx="68.5" cy="68.5" r="2.5" fill="#0c4068" />
+                      <circle cx="68.5" cy="90.5" r="2.5" fill="#0c4068" />
+                      <circle cx="90.5" cy="2.5" r="2.5" fill="#0c4068" />
+                      <circle cx="90.5" cy="24.5" r="2.5" fill="#0c4068" />
+                      <circle cx="90.5" cy="46.5" r="2.5" fill="#0c4068" />
+                      <circle cx="90.5" cy="68.5" r="2.5" fill="#0c4068" />
+                      <circle cx="90.5" cy="90.5" r="2.5" fill="#0c4068" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* WAVES y TITULO */}
+      {/* <section className="mb-6">
 
         <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:m-auto [&>svg]:block [&>svg]:w-full">
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" height="680"
@@ -99,12 +330,12 @@ export default function Home() {
         <div className="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-32">
           <div className="text-center">
             <div
-              className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.8)] dark:shadow-black/20 md:py-16 md:px-12"
+              className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] py-12 md:px-12"
               style={{
-                marginTop: "180px",
+                marginTop: "120px",
                 backdropFilter: "saturate(200%) blur(25px)",
               }}>
-              <h1 className="mt-6 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+              <h1 className="mt-6 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-6xl">
                 Administración en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
               </h1>
               <a className="mb-2 inline-block rounded bg-mainAzul-100 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
@@ -114,191 +345,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-
-
-      {/* <section
-        className="bg-center bg-no-repeat bg-blend-multiply"
-        style={{
-          backgroundImage: `url(${bgImage.src})`,
-          backgroundSize: "cover",
-        }}
-      >
-        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-            We invest in the world's potential
-          </h1>
-          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-            Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
-          </p>
-          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-mainAzul-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
-              Get started
-              <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-            <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-              Learn more
-            </a>
-          </div>
-        </div>
       </section> */}
 
-      <div className="mx-auto">
-        <div className="relative pb-[110px] pt-[120px] lg:pt-[150px]">
-          <div className="container">
-            <div className="flex flex-wrap">
-              <div className="w-full px-4 text-center mx-auto lg:text-left lg:w-5/12">
-                <div className="hero-content pl-3">
-                  {/* <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark xl:text-5xl">
-                    Administración enfocada en el ámbito <span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
-                  </h1> */}
-                  <Image
-                    src="/logos/logo_azul.png"
-                    alt="logo azul"
-                    className="mb-8 mx-auto lg:mx-0"
-                    height={80}
-                    width={240}
-                  ></Image>
-                  <p className="mb-8 max-w-[480px] text-base text-body-color mx-auto lg:text-left">
-                    Nos diferenciamos en soluciones y opiniones de diagnóstico profundo y oportuno con responsabilidad multidisciplinarias, conectando con los clientes de una manera emocional y sentido de pertenencia.
-                  </p>
-                  <ul className="flex flex-wrap mx-auto">
-                    <li>
-                      <a
-                        href="/#"
-                        className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7"
-                      >
-                        Get Started
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/#"
-                        className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-blue-500"
-                      >
-                        <span className="mr-2">
-                          <svg
-                            width="24"
-                            height="25"
-                            viewBox="0 0 24 25"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle cx="12" cy="12.6152" r="12" fill="#0c4068" />
-                            <rect
-                              x="7.99893"
-                              y="14.979"
-                              width="8.18182"
-                              height="1.63636"
-                              fill="white"
-                            />
-                            <rect
-                              x="11.2717"
-                              y="7.61523"
-                              width="1.63636"
-                              height="4.09091"
-                              fill="white"
-                            />
-                            <path
-                              d="M12.0898 14.1606L14.9241 11.0925H9.25557L12.0898 14.1606Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </span>
-                        Download App
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="clients pt-16">
-                    <h6 className="mb-6 flex items-center text-md font-normal text-body-color">
-                      Algunos de nuestros clientes:
-                      <span className="ml-3 inline-block h-px w-8 bg-body-color"></span>
-                    </h6>
 
-                    <div className="flex items-center space-x-4">
-
-                      <a href={'#'} className="flex w-full items-center justify-center">
-                        <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg'} alt="brand image" className="h-10 w-full" />
-                      </a>
-
-                      <a href={'#'} className="flex w-full items-center justify-center">
-                        <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg'} alt="brand image" className="h-10 w-full" />
-                      </a>
-
-                      <a href={'#'} className="flex w-full items-center justify-center">
-                        <img src={'https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg'} alt="brand image" className="h-10 w-full" />
-                      </a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden px-4 lg:block lg:w-1/12"></div>
-              <div className="w-full px-4 lg:w-6/12">
-                <div className="lg:ml-auto lg:text-right">
-                  <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                    <img
-                      src="/home.jpg"
-                      alt="hero"
-                      className="lg:ml-auto rounded-lg mx-auto"
-                      style={{ borderTopLeftRadius: "100px", width: "90%" }}
-                    />
-                    <span className="absolute -bottom-8 -left-8 z-[-1]">
-                      <svg
-                        width="93"
-                        height="93"
-                        viewBox="0 0 93 93"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="2.5" cy="2.5" r="2.5" fill="#0c4068" />
-                        <circle cx="2.5" cy="24.5" r="2.5" fill="#0c4068" />
-                        <circle cx="2.5" cy="46.5" r="2.5" fill="#0c4068" />
-                        <circle cx="2.5" cy="68.5" r="2.5" fill="#0c4068" />
-                        <circle cx="2.5" cy="90.5" r="2.5" fill="#0c4068" />
-                        <circle cx="24.5" cy="2.5" r="2.5" fill="#0c4068" />
-                        <circle cx="24.5" cy="24.5" r="2.5" fill="#0c4068" />
-                        <circle cx="24.5" cy="46.5" r="2.5" fill="#0c4068" />
-                        <circle cx="24.5" cy="68.5" r="2.5" fill="#0c4068" />
-                        <circle cx="24.5" cy="90.5" r="2.5" fill="#0c4068" />
-                        <circle cx="46.5" cy="2.5" r="2.5" fill="#0c4068" />
-                        <circle cx="46.5" cy="24.5" r="2.5" fill="#0c4068" />
-                        <circle cx="46.5" cy="46.5" r="2.5" fill="#0c4068" />
-                        <circle cx="46.5" cy="68.5" r="2.5" fill="#0c4068" />
-                        <circle cx="46.5" cy="90.5" r="2.5" fill="#0c4068" />
-                        <circle cx="68.5" cy="2.5" r="2.5" fill="#0c4068" />
-                        <circle cx="68.5" cy="24.5" r="2.5" fill="#0c4068" />
-                        <circle cx="68.5" cy="46.5" r="2.5" fill="#0c4068" />
-                        <circle cx="68.5" cy="68.5" r="2.5" fill="#0c4068" />
-                        <circle cx="68.5" cy="90.5" r="2.5" fill="#0c4068" />
-                        <circle cx="90.5" cy="2.5" r="2.5" fill="#0c4068" />
-                        <circle cx="90.5" cy="24.5" r="2.5" fill="#0c4068" />
-                        <circle cx="90.5" cy="46.5" r="2.5" fill="#0c4068" />
-                        <circle cx="90.5" cy="68.5" r="2.5" fill="#0c4068" />
-                        <circle cx="90.5" cy="90.5" r="2.5" fill="#0c4068" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="bg-slate-200 py-12 lg:py-[60px]">
+      {/* CLIENTES */}
+      <section className="bg-slate-200 py-6 lg:py-6">
         <div className="container mx-auto">
 
-          <h2 className="mb-6 text-4xl font-bold text-center">Clientes</h2>
+          <h2 className="my-6 text-4xl font-bold text-center">Clientes</h2>
 
-          <div className="mb-8">
+          <div className="mb-3">
             <hr className="w-12 mx-auto" style={{ border: 'none', height: '8px', background: '#0c4068' }} />
           </div>
 
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap ">
             <div className="w-full px-4">
               <div className="flex flex-wrap items-center justify-center">
                 <a
@@ -332,21 +392,21 @@ export default function Home() {
       </section>
 
 
+      {/* SERVICIOS */}
       <div className="container my-24 mx-auto px-6">
         <section className="text-center">
 
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[510px] text-center mb-10">
-                <span className="mb-2 block text-lg font-semibold text-primary">
+                <span className="mb-2 block text-2xl font-semibold text-primary">
                   Nuestros Servicios
                 </span>
-                <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px]">
+                <h2 className="mb-3 text-4xl lg:text-5xl font-bold leading-[1.2] text-dark">
                   Lo que ofrecemos
                 </h2>
                 <p className="text-base text-body-color">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
@@ -356,7 +416,7 @@ export default function Home() {
             <hr className="w-16 mx-auto" style={{ border: 'none', height: '8px', background: '#0c4068' }} />
           </div>
 
-          <div className="grid lg:grid-cols-3 lg:gap-x-12 mb-14">
+          <div className="grid lg:grid-cols-3 lg:gap-x-12 lg:mb-14">
 
             <div className="mb-12 lg:mb-0">
               <div
@@ -404,7 +464,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="">
+            <div className="mb-12 lg:mb-0">
               <div
                 className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
                 <div className="flex justify-center">
@@ -504,9 +564,9 @@ export default function Home() {
       </div>
 
 
-      <section className="pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
+      {/* <section className="pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[510px] text-center mb-10">
                 <span className="mb-2 block text-lg font-semibold text-primary">
@@ -523,7 +583,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap">
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-9 rounded-[20px] bg-white p-10 shadow-lg hover:shadow-2xl md:px-7 xl:px-10 hover:cursor-pointer hover:text-mainAzul-100">
@@ -699,12 +759,13 @@ export default function Home() {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* FOOTER */}
       <div className="py-16 xl:px-20 lg:px-12 sm:px-6 px-4 bg-gray-100 mx-0">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-8 gap-4">
+
           <div className="flex flex-col flex-shrink-0">
             <div>
               <Image src="/logos/LOGO_NEGRO.png" height={30} width={90} alt="icon"></Image>
@@ -754,6 +815,7 @@ export default function Home() {
               </button>
             </div>
           </div>
+
           <div className="sm:ml-0 ml-8 flex flex-col">
             <h2 className="text-base font-semibold leading-4 text-gray-800 ">Company</h2>
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Blog</a>
@@ -762,6 +824,7 @@ export default function Home() {
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Contact us</a>
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Testimonials</a>
           </div>
+
           <div className="flex flex-col">
             <h2 className="text-base font-semibold leading-4 text-gray-800 ">Support</h2>
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Legal policy</a>
@@ -769,34 +832,7 @@ export default function Home() {
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Privacy policy</a>
             <a href="javascript:void(0)" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Terms of service</a>
           </div>
-          <div className="mt-10 lg:block hidden">
-            <label className="text-xl font-medium leading-5 text-gray-800 ">Get updates</label>
-            <div className="cursor-pointer flex items-center justify-between border border-gray-800 mt-4">
-              <input type="text" className="text-base leading-4 p-4 w-full focus:outline-none text-gray-800 placeholder-gray-800" placeholder="Enter your email" />
-              <button aria-label="send" className="mr-4 fill-current text-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.8934 7.39673L14.8884 7.39457L1.54219 1.9166C1.42993 1.87011 1.30778 1.85187 1.18666 1.86353C1.06554 1.87519 0.949225 1.91637 0.848125 1.9834C0.741311 2.05266 0.653573 2.14711 0.592805 2.25826C0.532037 2.36941 0.500145 2.49376 0.5 2.62013V6.12357C0.50006 6.29633 0.561019 6.46366 0.67237 6.59671C0.783722 6.72976 0.938491 6.82021 1.11 6.85246L8.38906 8.18438C8.41767 8.18974 8.44348 8.20482 8.46205 8.22701C8.48062 8.2492 8.49078 8.2771 8.49078 8.30591C8.49078 8.33472 8.48062 8.36263 8.46205 8.38481C8.44348 8.407 8.41767 8.42208 8.38906 8.42744L1.11031 9.75936C0.938851 9.79153 0.784092 9.88185 0.67269 10.0148C0.561288 10.1477 0.500219 10.3149 0.5 10.4876V13.9917C0.499917 14.1124 0.530111 14.2312 0.587871 14.3374C0.645632 14.4437 0.729152 14.5341 0.830938 14.6006C0.953375 14.6811 1.09706 14.7241 1.24406 14.7243C1.34626 14.7242 1.4474 14.7039 1.54156 14.6646L14.8875 9.21787L14.8934 9.21509C15.0731 9.13869 15.2262 9.01185 15.3337 8.85025C15.4413 8.68866 15.4986 8.49941 15.4986 8.30591C15.4986 8.11241 15.4413 7.92316 15.3337 7.76157C15.2262 7.59997 15.0731 7.47313 14.8934 7.39673Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="mt-10 lg:hidden">
-          <label className="text-xl font-medium leading-5 text-gray-800 ">Get updates</label>
-          <div className="flex items-center justify-between border border-gray-800 mt-4">
-            <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none text-gray-800 placeholder-gray-800" placeholder="Enter your email" />
-            <button aria-label="send" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer mr-4 cursor-pointer relative z-40">
-              <svg className="fill-current text-gray-800 hover:text-gray-500" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.8934 7.39673L14.8884 7.39457L1.54219 1.9166C1.42993 1.87011 1.30778 1.85187 1.18666 1.86353C1.06554 1.87519 0.949225 1.91637 0.848125 1.9834C0.741311 2.05266 0.653573 2.14711 0.592805 2.25826C0.532037 2.36941 0.500145 2.49376 0.5 2.62013V6.12357C0.50006 6.29633 0.561019 6.46366 0.67237 6.59671C0.783722 6.72976 0.938491 6.82021 1.11 6.85246L8.38906 8.18438C8.41767 8.18974 8.44348 8.20482 8.46205 8.22701C8.48062 8.2492 8.49078 8.2771 8.49078 8.30591C8.49078 8.33472 8.48062 8.36263 8.46205 8.38481C8.44348 8.407 8.41767 8.42208 8.38906 8.42744L1.11031 9.75936C0.938851 9.79153 0.784092 9.88185 0.67269 10.0148C0.561288 10.1477 0.500219 10.3149 0.5 10.4876V13.9917C0.499917 14.1124 0.530111 14.2312 0.587871 14.3374C0.645632 14.4437 0.729152 14.5341 0.830938 14.6006C0.953375 14.6811 1.09706 14.7241 1.24406 14.7243C1.34626 14.7242 1.4474 14.7039 1.54156 14.6646L14.8875 9.21787L14.8934 9.21509C15.0731 9.13869 15.2262 9.01185 15.3337 8.85025C15.4413 8.68866 15.4986 8.49941 15.4986 8.30591C15.4986 8.11241 15.4413 7.92316 15.3337 7.76157C15.2262 7.59997 15.0731 7.47313 14.8934 7.39673Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </button>
-          </div>
+
         </div>
       </div>
 

@@ -28,7 +28,7 @@ export default function Home() {
         }}
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center flex flex-col items-center justify-center h-full">
-          <h1 className="mb-4 text-4xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+          <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
             Administración en el ámbito <span className="text-slate-400">legal</span> y <span className="text-slate-400">tecnológico</span>          </h1>
           <p className="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum suscipit tenetur eligendi aut. Labore, veniam a ex quia magni soluta quos ipsam eos aut?

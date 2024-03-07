@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* FOTO background y TEXTO */}
       <section
-        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover bg-fixed"
+        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover"
         style={{
           backgroundImage: `url(${bgImage.src})`,
           // backgroundSize: "cover",

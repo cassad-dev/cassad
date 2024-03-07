@@ -17,13 +17,12 @@ export default function Home() {
 
       {/* FOTO background y TEXTO */}
       <section
-        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600"
+        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover"
         style={{
           backgroundImage: `url(${bgImage.src})`,
           // backgroundSize: "cover",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          // backgroundPosition: "center",
+          // backgroundAttachment: "fixed",
           // opacity: "0.5",
           height: "70vh",
         }}

@@ -150,7 +150,7 @@ export default function Administracion() {
                 className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-14 gap-x-14 mt-10 mb-16">
 
                 {properties.map((property) => (
-                    <PropertyCard property={property} />
+                    <PropertyCard property={property} key={property.id} />
                 ))}
 
             </section>

@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import bgImage from "../public/home2.jpg";
-import NavBar from "./ui/NavBar";
+import NavBar from "./ui/navbar/NavBar";
 import Footer from "./ui/Footer";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -112,7 +113,7 @@ export default function Home() {
                   className="mb-8 mx-auto lg:mx-0"
                   height={130}
                   width={390}
-                ></Image>
+                />
                 {/* <h1 className="mb-10 text-6xl font-bold tracking-tight">
                   Administración <br /> en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
                 </h1> */}
@@ -121,19 +122,19 @@ export default function Home() {
                 </p>
                 <ul className="flex flex-wrap mx-auto justify-center lg:justify-normal">
                   <li>
-                    <a
-                      href="/#"
+                    <Link
+                      href="/servicios"
                       className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7 mb-3 lg:mb-0"
                     >
                       Ver servicios
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/#"
-                      className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-[#464646] hover:text-blue-500"
+                    <Link
+                      href="/administracion"
+                      className="inline-flex items-center justify-center rounded-md border border-gray-900 px-5 py-3 ml-2 text-center text-base font-medium text-gray-900 hover:bg-gray-300 lg:px-7"
                     >
-                      <span className="mr-1">
+                      {/* <span className="mr-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-6 w-6"
@@ -148,9 +149,9 @@ export default function Home() {
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
-                      </span>
+                      </span> */}
                       Explorar propiedades
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* <div className="clients pt-16">
@@ -243,30 +244,26 @@ export default function Home() {
           <div className="flex flex-wrap ">
             <div className="w-full px-4">
               <div className="flex flex-wrap items-center justify-center">
-                <a
-                  href={'#'}
+                <div
                   className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
                 >
                   <img src={"/logos/logo1.png"} alt={"Brand Image"} className="w-full" />
-                </a>
-                <a
-                  href={'#'}
+                </div>
+                <div
                   className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
                 >
                   <img src={"/logos/logo2.png"} alt={"Brand Image"} className="w-full" />
-                </a>
-                <a
-                  href={'#'}
+                </div>
+                <div
                   className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
                 >
                   <img src={"/logos/logo3.png"} alt={"Brand Image"} className="w-full" />
-                </a>
-                <a
-                  href={'#'}
+                </div>
+                <div
                   className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
                 >
                   <img src={"/logos/logo4.png"} alt={"Brand Image"} className="w-full" />
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -368,6 +365,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
 
           <div className="grid lg:grid-cols-3 lg:gap-x-12">

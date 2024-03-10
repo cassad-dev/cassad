@@ -1,5 +1,5 @@
 'use client'
-import NavBar from "../ui/NavBar";
+import NavBar from "../ui/navbar/NavBar";
 import Footer from "../ui/Footer";
 
 export default function Conocenos() {

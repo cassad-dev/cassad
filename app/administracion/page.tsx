@@ -1,8 +1,81 @@
 'use client'
-import NavBar from "../ui/NavBar";
+import NavBar from "../ui/navbar/NavBar";
 import Footer from "../ui/Footer";
+import PropertyCard from "../ui/properties/PropertyCard";
+
+const properties = [
+    {
+        id: '1',
+        name: 'Casa en Sierra Alta',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Calle de la Montaña 123, Sierra Alta',
+        price: 2500000,
+        m_squared: 130,
+        photo: '/casas/casa2.jpg',
+        description: 'Descubre la elegancia y comodidad en esta encantadora casa en Sierra Alta, situada en Monterrey, Nuevo León, México. Con una impresionante área de 130 metros cuadrados, esta residencia ofrece amplios espacios llenos de luz natural, acabados de primera calidad y una vista panorámica que quita el aliento. Perfecta para aquellos que desean una vida lujosa en una de las zonas más exclusivas de Monterrey.',
+        type: 'Residencial',
+    },
+    {
+        id: '2',
+        name: 'Casa en San Pedro',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Avenida de las Palmas 456, San Pedro',
+        price: 12500000,
+        m_squared: 225,
+        photo: '/casas/casa4.jpg',
+        description: 'Adéntrate en el lujo y la sofisticación con esta elegante casa en San Pedro, una localidad privilegiada en Monterrey, Nuevo León, México. Con una impresionante área de 225 metros cuadrados, esta residencia cuenta con espacios magníficamente diseñados, acabados de alta gama y una vista panorámica que deleita los sentidos. Ideal para aquellos que buscan una residencia excepcional en una de las zonas más prestigiosas de Monterrey.',
+        type: 'Residencial',
+    },
+    {
+        id: '3',
+        name: 'Terreno en San Agustín',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Calle de la Colina 789, San Agustín',
+        price: 3500000,
+        m_squared: 90,
+        photo: '/casas/terreno1.jpg',
+        description: 'Explora las posibilidades en este amplio terreno ubicado en San Agustín, una joya escondida en Monterrey, Nuevo León, México. Con una extensión de 90 metros cuadrados, este terreno ofrece un lienzo en blanco para construir la casa de tus sueños, con vistas panorámicas y la tranquilidad que solo esta zona exclusiva puede ofrecer.',
+        type: 'Terrenos',
+    },
+    {
+        id: '4',
+        name: 'Departamento en Cordillera',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Boulevard de las Montañas 101, Cordillera',
+        price: 1500000,
+        m_squared: 70,
+        photo: '/casas/casa1.jpg',
+        description: 'Disfruta del estilo de vida moderno y urbano en este encantador departamento en Cordillera, ubicado en Monterrey, Nuevo León, México. Con una superficie de 70 metros cuadrados, este departamento ofrece comodidad, diseño contemporáneo y una vista impresionante de la ciudad. Perfecto para aquellos que buscan un hogar elegante en el corazón de Monterrey.',
+        type: 'Residencial',
+    },
+    {
+        id: '5',
+        name: 'Local en Plaza Comercial colonia Chepevera',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Avenida de los Comerciantes 555, Chepevera',
+        price: 2000000,
+        m_squared: 80,
+        photo: '/casas/comercial1.png',
+        description: 'Haz realidad tu negocio en este amplio local ubicado en Plaza Comercial colonia Chepevera, en Monterrey, Nuevo León, México. Con una superficie de 80 metros cuadrados, este local comercial ofrece una excelente ubicación, espacios versátiles y la oportunidad de atraer a una clientela exigente. Ideal para emprendedores que buscan destacar en una zona comercial de alta demanda.',
+        type: 'Comercial',
+    },
+    {
+        id: '6',
+        name: 'Casa en Bosques del Valle',
+        location: 'Monterrey, Nuevo Leon, Mexico',
+        address: 'Calle del Bosque 987, Bosques del Valle',
+        price: 7500000,
+        m_squared: 160,
+        photo: '/casas/casa3.jpg',
+        description: 'Experimenta el lujo y la privacidad en esta espléndida casa ubicada en Bosques del Valle, en Monterrey, Nuevo León, México. Con una impresionante área de 160 metros cuadrados, esta residencia ofrece un diseño arquitectónico impecable, acabados de lujo y una vista panorámica que te dejará sin aliento. Perfecta para aquellos que buscan una vida de ensueño en una de las zonas más exclusivas de Monterrey.',
+        type: 'Residencial',
+    }
+];
+
+
 
 export default function Administracion() {
+
     return (
         <main className="flex min-h-screen flex-col">
             <NavBar />
@@ -76,299 +149,9 @@ export default function Administracion() {
             <section
                 className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-14 gap-x-14 mt-10 mb-16">
 
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/casa2.jpg" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Casa en Sierra Alta</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">130 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                {/* <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span> */}
-                                <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span>
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                {/* <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span> */}
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$2,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/casa4.jpg" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Casa en San Pedro</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">225 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                {/* <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span> */}
-                                <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span>
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                {/* <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span> */}
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$12,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/terreno1.jpg" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Terreno en San Agustín</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">90 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                {/* <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span> */}
-                                {/* <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span> */}
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span>
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$3,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/casa1.jpg" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Departamento en Cordillera</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">70 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                {/* <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span> */}
-                                <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span>
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                {/* <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span> */}
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$1,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/comercial1.png" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Local en Plaza Comercial colonia Chepevera</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">80 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span>
-                                {/* <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span> */}
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                {/* <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span> */}
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$2,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer">
-                    <div>
-                        <img src="/casas/casa3.jpg" alt="Imagen de propiedad" className="h-80 w-72 object-cover rounded-t-xl" />
-                        <div className="px-4 py-3 w-72">
-
-                            {/* Ubicación */}
-                            <span className="text-gray-400 mr-3 uppercase text-xs">Monterrey, Nuevo Leon, Mexico</span>
-
-                            {/* Nombre */}
-                            <p className="text-lg font-bold text-black truncate block capitalize">Casa en Bosques del Valle</p>
-
-                            <div className="flex items-center mt-2">
-
-                                {/* Metros cuadrados */}
-                                <p className="text-sm text-black cursor-auto">160 m<sup>2</sup></p>
-
-                                {/* Tipo */}
-                                {/* <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Comercial</span> */}
-                                <span className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Residencial</span>
-                                {/* <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Mixtas</span> */}
-                                {/* <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Terrenos</span> */}
-                                {/* <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Industrial</span> */}
-                                {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded ml-2">Especiales</span> */}
-
-                            </div>
-
-
-                            <div className="flex items-center">
-
-                                {/* Precio */}
-                                <p className="text-lg font-semibold text-black cursor-auto my-3">$7,500,000 MXN</p>
-
-                                {/* <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
-                                </del> */}
-
-                                {/* <div className="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                                    <path
-                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                                </svg></div> */}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {properties.map((property) => (
+                    <PropertyCard property={property} />
+                ))}
 
             </section>
 

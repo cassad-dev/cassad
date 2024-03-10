@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -13,8 +14,12 @@ export default function Footer() {
                         </div>
                         <p className="text-sm leading-none text-gray-800 mt-4 ">Copyright © 2024 Cassad</p>
                         <p className="text-sm leading-none text-gray-800 mt-4 ">All rights reserved</p>
+
+                        {/* icons */}
                         <div className="flex items-center gap-x-4 mt-12">
-                            <a aria-label="instagram" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.instagram.com" target="blank">
+
+                            {/* Instagram */}
+                            <Link aria-label="instagram" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.instagram.com" target="blank">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fillRule="evenodd"
@@ -23,13 +28,17 @@ export default function Footer() {
                                         fill="white"
                                     />
                                 </svg>
-                            </a>
-                            <a aria-label="linked-in" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.linkedin.com/company/cassad-proptech/" target="blank">
+                            </Link>
+
+                            {/* Linkedin */}
+                            <Link aria-label="linked-in" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.linkedin.com/company/cassad-proptech/" target="blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="white">
                                     <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
                                 </svg>
-                            </a>
-                            <a aria-label="twitter" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://twitter.com/" target="blank">
+                            </Link>
+
+                            {/* Twitter */}
+                            <Link aria-label="twitter" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://twitter.com/" target="blank">
                                 <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fillRule="evenodd"
@@ -38,8 +47,10 @@ export default function Footer() {
                                         fill="white"
                                     />
                                 </svg>
-                            </a>
-                            <a aria-label="youtube" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.youtube.com/" target="blank">
+                            </Link>
+
+                            {/* YouTube */}
+                            <Link aria-label="youtube" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center" href="https://www.youtube.com/" target="blank">
                                 <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fillRule="evenodd"
@@ -48,26 +59,24 @@ export default function Footer() {
                                         fill="white"
                                     />
                                 </svg>
-                            </a>
+                            </Link>
+
                         </div>
                     </div>
 
                     <div className="sm:ml-0 ml-8 flex flex-col">
                         <h2 className="text-base font-semibold leading-4 text-gray-800 ">Navegación</h2>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Inicio</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Nosotros</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicios</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Administración</a>
+                        <Link href="/" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Inicio</Link>
+                        <Link href="/conocenos" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Conócenos</Link>
+                        <Link href="/servicios" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicios</Link>
+                        <Link href="/administracion" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Administración</Link>
                     </div>
 
                     <div className="flex flex-col">
                         <h2 className="text-base font-semibold leading-4 text-gray-800 ">Servicios</h2>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Legal policy</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Status policy</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Privacy policy</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Terms of service</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio</a>
-                        <a href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Otro servicio</a>
+                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #1</Link>
+                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #2</Link>
+                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #3</Link>
                     </div>
 
                 </div>

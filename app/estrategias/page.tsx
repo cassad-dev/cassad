@@ -14,7 +14,7 @@ export default function Estrategias() {
         address: 'Calle del Bosque 987, Bosques del Valle',
         price: 7500000,
         m_squared: 160,
-        photo: '/casas/casa3.jpg',
+        photo: '/img/almacen.jpg',
         description: 'Experimenta el lujo y la privacidad en esta espléndida casa ubicada en Bosques del Valle, en Monterrey, Nuevo León, México. Con una impresionante área de 160 metros cuadrados, esta residencia ofrece un diseño arquitectónico impecable, acabados de lujo y una vista panorámica que te dejará sin aliento. Perfecta para aquellos que buscan una vida de ensueño en una de las zonas más exclusivas de Monterrey.',
         type: 'Residencial',
     };

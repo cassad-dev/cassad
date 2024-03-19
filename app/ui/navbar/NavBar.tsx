@@ -17,6 +17,10 @@ const links = [
         name: 'Administración',
         href: '/administracion',
     },
+    {
+        name: 'Estrategias',
+        href: '/estrategias',
+    },
 ];
 
 export default function NavBar() {

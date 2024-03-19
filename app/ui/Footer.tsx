@@ -70,13 +70,17 @@ export default function Footer() {
                         <Link href="/conocenos" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Conócenos</Link>
                         <Link href="/servicios" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicios</Link>
                         <Link href="/administracion" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Administración</Link>
+                        <Link href="/estrategias" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Estrategias</Link>
                     </div>
 
                     <div className="flex flex-col">
                         <h2 className="text-base font-semibold leading-4 text-gray-800 ">Servicios</h2>
-                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #1</Link>
-                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #2</Link>
-                        <Link href="#" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Servicio #3</Link>
+                        <Link href="/servicios#administracionPropiedades" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Administración de Propiedades</Link>
+                        <Link href="/servicios#representacionPropiedades" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Representación de Propietarios</Link>
+                        <Link href="/servicios#solucionesInmobiliarias" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Soluciones Inmobiliarias</Link>
+                        <Link href="/servicios#renegociacionContratos" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Renegociación de Contratos</Link>
+                        <Link href="/servicios#proteccionEscrituras" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Protección de Escrituras</Link>
+                        <Link href="/servicios#investigacionPropiedades" className="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800  cursor-pointer">Investigación de Propiedades</Link>
                     </div>
 
                 </div>

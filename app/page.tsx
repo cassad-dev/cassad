@@ -21,6 +21,7 @@ export default function Home() {
         className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover"
         style={{
           backgroundImage: `url(${bgImage.src})`,
+          backgroundColor: "rgba(12, 64, 104, 0.8)",
           // backgroundSize: "cover",
           // backgroundPosition: "center",
           // backgroundAttachment: "fixed",
@@ -30,7 +31,8 @@ export default function Home() {
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center flex flex-col items-center justify-center h-full">
           <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
-            Administración en el ámbito <span className="text-slate-400">legal</span> y <span className="text-slate-400">tecnológico</span>          </h1>
+            Administración en el ámbito <span className="text-slate-400">legal</span> y <span className="text-slate-400">tecnológico</span>
+          </h1>
           <p className="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum suscipit tenetur eligendi aut. Labore, veniam a ex quia magni soluta quos ipsam eos aut?
           </p>
@@ -50,16 +52,38 @@ export default function Home() {
 
 
       {/* CONTACTO */}
-      <div className="w-full mx-auto md:px-6 bg-slate-200">
+      <div className="w-full mx-auto px-6">
         <section>
-          <div className="px-6 md:px-12">
+          <div className="px-6 md:px-12 bg-slate-200 rounded-xl">
             <div
-              className="block rounded-lg px-6 py-12 md:px-12">
-              <div className="grid gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              className="block px-6 py-4 md:px-12 mt-[-50px]">
 
-                <div className="mx-auto mb-6 text-center lg:mb-0">
+              {/* bigger screens */}
+              <div className="hidden md:block">
+
+                <div className="flex items-center justify-center mx-auto text-center lg:mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary dark:text-primary-400 mr-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <h6 className="font-medium">Monterrey, México</h6>
+
+                  <p className="mx-10">|</p>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary dark:text-primary-400 mr-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                  <h6 className="font-medium">contacto@cassad.com.mx</h6>
+                </div>
+
+              </div>
+
+              {/* smaller screens */}
+              <div className="block md:hidden">
+
+                <div className="mx-auto py-3 text-center lg:mb-0">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    stroke="currentColor" className="mx-auto mb-4 h-8 w-8 text-primary dark:text-primary-400">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round"
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -67,33 +91,18 @@ export default function Home() {
                   <h6 className="font-medium">Monterrey, México</h6>
                 </div>
 
-                <div className="mx-auto mb-6 text-center lg:mb-0">
+                <hr className="bg-slate-400 h-0.5 my-2" />
+
+                <div className="mx-auto py-3 text-center lg:mb-0">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                    stroke="currentColor" className="mx-auto mb-4 h-8 w-8 text-primary dark:text-primary-400">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
-                  <h6 className="font-medium">contacto@cassad.com</h6>
-                </div>
-
-                <div className="mx-auto mb-6 text-center md:mb-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                  </svg>
-                  <h6 className="font-medium">+52 (81) 1669 0664</h6>
-                </div>
-
-                <div className="mx-auto text-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                      d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                  </svg>
-                  <h6 className="font-medium">Tax ID: 273 384</h6>
+                  <h6 className="font-medium">contacto@cassad.com.mx</h6>
                 </div>
 
               </div>
+
             </div>
           </div>
         </section>
@@ -118,13 +127,13 @@ export default function Home() {
                   Administración <br /> en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
                 </h1> */}
                 <p className="mb-8 max-w-[480px] text-xl text-body-color mx-auto lg:mx-0">
-                  Nos diferenciamos en soluciones y opiniones de diagnóstico profundo y oportuno con responsabilidad multidisciplinarias, conectando con los clientes de una manera emocional y sentido de pertenencia.
+                  Nos diferenciamos en estrategias y soluciones de diagnóstico inmobiliario para conectar con clientes de una manera personal y sentido de pertenencia.
                 </p>
                 <ul className="flex flex-wrap mx-auto justify-center lg:justify-normal">
                   <li>
                     <Link
                       href="/servicios"
-                      className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7 mb-3 lg:mb-0"
+                      className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7 mb-3 xl:mb-0"
                     >
                       Ver servicios
                     </Link>
@@ -244,26 +253,28 @@ export default function Home() {
           <div className="flex flex-wrap ">
             <div className="w-full px-4">
               <div className="flex flex-wrap items-center justify-center">
+
+                {/* logo #1 */}
                 <div
-                  className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
+                  className="mx-4 flex w-[150px] items-center justify-center py-4 2xl:w-[180px]"
                 >
-                  <img src={"/logos/logo1.png"} alt={"Brand Image"} className="w-full" />
+                  <img src={"/logos/believebytere-logo.png"} alt={"Believe by Tere logo"} className="w-full" />
                 </div>
+
+                {/* logo #2 */}
                 <div
-                  className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
+                  className="mx-4 flex w-[150px] items-center justify-center py-4 px-4 2xl:w-[180px]"
                 >
-                  <img src={"/logos/logo2.png"} alt={"Brand Image"} className="w-full" />
+                  <img src={"/logos/fanatiker-logo.png"} alt={"Fanatiker logo"} className="w-full" />
                 </div>
+
+                {/* logo #3 */}
                 <div
-                  className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
+                  className="mx-4 flex w-[150px] items-center justify-center py-4 2xl:w-[180px]"
                 >
-                  <img src={"/logos/logo3.png"} alt={"Brand Image"} className="w-full" />
+                  <img src={"/logos/grupolomex-logo.png"} alt={"Grupo Lomex logo"} className="w-full" />
                 </div>
-                <div
-                  className="mx-4 flex w-[150px] items-center justify-center  2xl:w-[180px]"
-                >
-                  <img src={"/logos/logo4.png"} alt={"Brand Image"} className="w-full" />
-                </div>
+
               </div>
             </div>
           </div>
@@ -285,7 +296,7 @@ export default function Home() {
                   Lo que ofrecemos
                 </h2>
                 <p className="text-base text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Descubre los servicios que ofrecemos para ti.
                 </p>
               </div>
             </div>
@@ -310,11 +321,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Support 24/7</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Administración de Propiedades
+                  </h5>
                   <p>
-                    Laudantium totam quas cumque pariatur at doloremque hic quos
-                    quia eius. Reiciendis optio minus mollitia rerum labore
-                    facilis inventore voluptatem ad, quae quia sint.
+                    Gestión integral de propiedades, incluyendo cobro de rentas, resguardo de documentos y asesoría legal.
                   </p>
                 </div>
               </div>
@@ -333,11 +344,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Safe and solid</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Representación de Propietarios
+                  </h5>
                   <p>
-                    Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                    ullam aspernatur odio soluta, quisquam dolore animi mollitia a
-                    omnis praesentium, expedita nobis!
+                    Defensa de los intereses de los propietarios en negociaciones y contratos.
                   </p>
                 </div>
               </div>
@@ -356,11 +367,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Extremely fast</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Soluciones Inmobiliarias
+                  </h5>
                   <p>
-                    Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                    ullam beatae hic voluptatibus dolores exercitationem? Facilis
-                    debitis aspernatur amet nisi?
+                    Estrategias innovadoras para optimizar el valor y el rendimiento de las propiedades.
                   </p>
                 </div>
               </div>
@@ -383,11 +394,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Support 24/7</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Renegociación de Contratos
+                  </h5>
                   <p>
-                    Laudantium totam quas cumque pariatur at doloremque hic quos
-                    quia eius. Reiciendis optio minus mollitia rerum labore
-                    facilis inventore voluptatem ad, quae quia sint.
+                    Renegociación de términos y condiciones para obtener los mejores beneficios.
                   </p>
                 </div>
               </div>
@@ -406,11 +417,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Safe and solid</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Protección de Escrituras
+                  </h5>
                   <p>
-                    Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                    ullam aspernatur odio soluta, quisquam dolore animi mollitia a
-                    omnis praesentium, expedita nobis!
+                    Garantía de seguridad y legalidad en la documentación de propiedades.
                   </p>
                 </div>
               </div>
@@ -429,11 +440,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h5 className="mb-4 text-lg font-semibold">Extremely fast</h5>
+                  <h5 className="mb-4 text-lg font-semibold">
+                    Investigación de Propiedades
+                  </h5>
                   <p>
-                    Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                    ullam beatae hic voluptatibus dolores exercitationem? Facilis
-                    debitis aspernatur amet nisi?
+                    Análisis exhaustivo de propiedades y alertas inmobiliarias para prevenir riesgos.
                   </p>
                 </div>
               </div>
@@ -442,6 +453,29 @@ export default function Home() {
 
         </section>
       </div>
+
+      {/* CONTACTO */}
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+          <form action="#" className="space-y-8">
+            <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+            </div>
+            <div className="sm:col-span-2">
+              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+              <textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          </form>
+        </div>
+      </section>
 
 
       {/* <section className="pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">

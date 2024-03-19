@@ -1,77 +1,6 @@
 'use client'
 import NavBar from "../ui/navbar/NavBar";
 import Footer from "../ui/Footer";
-import PropertyCard from "../ui/properties/PropertyCard";
-
-const properties = [
-    {
-        id: '1',
-        name: 'Casa en Sierra Alta',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Calle de la Montaña 123, Sierra Alta',
-        price: 2500000,
-        m_squared: 130,
-        photo: '/casas/casa2.jpg',
-        description: 'Descubre la elegancia y comodidad en esta encantadora casa en Sierra Alta, situada en Monterrey, Nuevo León, México. Con una impresionante área de 130 metros cuadrados, esta residencia ofrece amplios espacios llenos de luz natural, acabados de primera calidad y una vista panorámica que quita el aliento. Perfecta para aquellos que desean una vida lujosa en una de las zonas más exclusivas de Monterrey.',
-        type: 'Residencial',
-    },
-    {
-        id: '2',
-        name: 'Casa en San Pedro',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Avenida de las Palmas 456, San Pedro',
-        price: 12500000,
-        m_squared: 225,
-        photo: '/casas/casa4.jpg',
-        description: 'Adéntrate en el lujo y la sofisticación con esta elegante casa en San Pedro, una localidad privilegiada en Monterrey, Nuevo León, México. Con una impresionante área de 225 metros cuadrados, esta residencia cuenta con espacios magníficamente diseñados, acabados de alta gama y una vista panorámica que deleita los sentidos. Ideal para aquellos que buscan una residencia excepcional en una de las zonas más prestigiosas de Monterrey.',
-        type: 'Residencial',
-    },
-    {
-        id: '3',
-        name: 'Terreno en San Agustín',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Calle de la Colina 789, San Agustín',
-        price: 3500000,
-        m_squared: 90,
-        photo: '/casas/terreno1.jpg',
-        description: 'Explora las posibilidades en este amplio terreno ubicado en San Agustín, una joya escondida en Monterrey, Nuevo León, México. Con una extensión de 90 metros cuadrados, este terreno ofrece un lienzo en blanco para construir la casa de tus sueños, con vistas panorámicas y la tranquilidad que solo esta zona exclusiva puede ofrecer.',
-        type: 'Terrenos',
-    },
-    {
-        id: '4',
-        name: 'Departamento en Cordillera',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Boulevard de las Montañas 101, Cordillera',
-        price: 1500000,
-        m_squared: 70,
-        photo: '/casas/casa1.jpg',
-        description: 'Disfruta del estilo de vida moderno y urbano en este encantador departamento en Cordillera, ubicado en Monterrey, Nuevo León, México. Con una superficie de 70 metros cuadrados, este departamento ofrece comodidad, diseño contemporáneo y una vista impresionante de la ciudad. Perfecto para aquellos que buscan un hogar elegante en el corazón de Monterrey.',
-        type: 'Residencial',
-    },
-    {
-        id: '5',
-        name: 'Local en Plaza Comercial colonia Chepevera',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Avenida de los Comerciantes 555, Chepevera',
-        price: 2000000,
-        m_squared: 80,
-        photo: '/casas/comercial1.png',
-        description: 'Haz realidad tu negocio en este amplio local ubicado en Plaza Comercial colonia Chepevera, en Monterrey, Nuevo León, México. Con una superficie de 80 metros cuadrados, este local comercial ofrece una excelente ubicación, espacios versátiles y la oportunidad de atraer a una clientela exigente. Ideal para emprendedores que buscan destacar en una zona comercial de alta demanda.',
-        type: 'Comercial',
-    },
-    {
-        id: '6',
-        name: 'Casa en Bosques del Valle',
-        location: 'Monterrey, Nuevo Leon, Mexico',
-        address: 'Calle del Bosque 987, Bosques del Valle',
-        price: 7500000,
-        m_squared: 160,
-        photo: '/casas/casa3.jpg',
-        description: 'Experimenta el lujo y la privacidad en esta espléndida casa ubicada en Bosques del Valle, en Monterrey, Nuevo León, México. Con una impresionante área de 160 metros cuadrados, esta residencia ofrece un diseño arquitectónico impecable, acabados de lujo y una vista panorámica que te dejará sin aliento. Perfecta para aquellos que buscan una vida de ensueño en una de las zonas más exclusivas de Monterrey.',
-        type: 'Residencial',
-    }
-];
-
 
 
 export default function Administracion() {
@@ -146,14 +75,14 @@ export default function Administracion() {
             </section>
 
             {/* CARDS */}
-            <section
+            {/* <section
                 className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-14 gap-x-14 mt-10 mb-16">
 
                 {properties.map((property) => (
                     <PropertyCard property={property} key={property.id} />
                 ))}
 
-            </section>
+            </section> */}
 
             {/* FOOTER */}
             <Footer />

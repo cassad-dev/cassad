@@ -10,7 +10,7 @@ export default function Conocenos() {
             <NavBar />
 
             {/* HERO */}
-            {/* <div className="bg-slate-200">
+            <div className="bg-slate-200">
                 <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
                     <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
@@ -19,7 +19,7 @@ export default function Conocenos() {
                         <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg">Descubra quiénes somos y nuestros valores fundamentales en Cassad, donde la confianza, las relaciones interpersonales y la experiencia se combinan para ofrecer soluciones excepcionales. </p>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             {/* CONTENT */}
             <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">

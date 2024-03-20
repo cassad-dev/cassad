@@ -61,7 +61,7 @@ export default function Home() {
               <div className="hidden md:block">
 
                 <div className="flex items-center justify-center mx-auto text-center lg:mb-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary dark:text-primary-400 mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary mr-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                   </svg>
@@ -69,7 +69,7 @@ export default function Home() {
 
                   <p className="mx-10">|</p>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary dark:text-primary-400 mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary mr-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                   <h6 className="font-medium">contacto@cassad.com.mx</h6>
@@ -453,22 +453,22 @@ export default function Home() {
       {/* Form CONTACTO */}
       <section className="bg-white">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contáctanos</h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">¿Necesitas ayuda? Estamos aquí para apoyarte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contáctanos</h2>
+          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">¿Necesitas ayuda? Estamos aquí para apoyarte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
           <form action="#" className="space-y-8">
 
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu correo electrónico</label>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Tu correo electrónico</label>
               <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="ejemplo@email.com" required />
             </div>
 
             <div>
-              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunto</label>
+              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900">Asunto</label>
               <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Déjanos saber en qué te podemos ayudar" required />
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Tu mensaje</label>
+              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Tu mensaje</label>
               <textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Deja un comentario..."></textarea>
             </div>
 

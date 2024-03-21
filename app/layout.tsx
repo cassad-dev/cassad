@@ -6,10 +6,10 @@ import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Cassad",
-  description: "Servicios inmobiliarios y legales",
-};
+// export const metadata: Metadata = {
+//   title: "Cassad",
+//   description: "Servicios inmobiliarios y legales",
+// };
 
 export default function RootLayout({
   children,

@@ -29,7 +29,7 @@ export default function Servicios() {
 
 
             {/* SERVICES */}
-            <div className="relative overflow-hidden pt-16 pb-32 space-y-24">
+            <div className="relative overflow-hidden pt-16 pb-20 space-y-24">
 
 
                 {/* Servicio #1 */}

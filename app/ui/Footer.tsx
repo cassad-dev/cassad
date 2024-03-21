@@ -9,9 +9,9 @@ export default function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-3 md:gap-8 gap-4">
 
                     <div className="flex flex-col flex-shrink-0">
-                        <div>
+                        <Link href={"/"}>
                             <Image src="/logos/logo_negro.png" height={30} width={90} alt="logo negro"></Image>
-                        </div>
+                        </Link>
                         <p className="text-sm leading-none text-gray-800 mt-4 ">Copyright © 2024 Cassad</p>
                         <p className="text-sm leading-none text-gray-800 mt-4 ">All rights reserved</p>
 

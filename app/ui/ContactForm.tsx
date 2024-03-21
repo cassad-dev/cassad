@@ -40,7 +40,7 @@ export default function ContactForm() {
                         <strong className="font-bold">¡Éxito!</strong> <span>Mensaje enviado</span>
                     </div>
                 )}
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
 
                     <div>
                         <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">

@@ -21,7 +21,7 @@ export default function RootLayout({
       <Head>
         <meta property="og:title" content="Cassad" />
         <meta property="og:description" content="Servicios inmobiliarios y legales" />
-        <meta property="og:image" content="/logos/logo_fondo_blanco.jpg" />
+        <meta property="og:image" content="https://cassad.vercel.app/logos/logo_fondo_blanco.jpg" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>

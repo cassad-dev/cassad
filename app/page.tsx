@@ -127,7 +127,7 @@ export default function Home() {
                   Administración <br /> en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
                 </h1> */}
                 <p className="mb-8 max-w-[480px] text-lg md:text-xl text-body-color mx-auto lg:mx-0">
-                  Cassad ofrece soluciones integrales en inmobiliaria y legal con más de 10 años de experiencia. Destacamos en gestión de propiedades, negociación de contratos y protección de activos. Nos diferenciamos por la atención personalizada y calidad excepcional.                </p>
+                  Cassad ofrece soluciones integrales en servicios inmobiliarios y legales con más de 10 años de experiencia. Destacamos en gestión de propiedades, negociación de contratos y protección de activos. Nos diferenciamos por la atención personalizada y calidad excepcional.                </p>
                 <ul className="flex flex-wrap mx-auto justify-center lg:justify-normal">
                   <li>
                     <Link

@@ -97,6 +97,31 @@ export default function Administracion() {
                         <div className="w-full px-4 md:w-1/2 lg:w-1/3 py-4">
                             <div className="mb-9 rounded-[20px] bg-white p-10 shadow-xl border hover:shadow-2xl md:px-7 xl:px-10 hover:cursor-pointer hover:text-mainAzul-100" style={{ height: '100%' }}>
                                 <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-mainAzul-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.2} className="w-10 h-10">
+                                        <path color="white" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                                    </svg>
+
+                                </div>
+                                <h4 className="mb-[14px] text-2xl font-semibold text-dark">
+                                    Asesoría Legal e Inmobiliaria
+                                </h4>
+                                <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside">
+                                    <li>
+                                        Asesoramiento experto en cuestiones legales y fiscales relacionadas con la propiedad.
+                                    </li>
+                                    <li>
+                                        Resolución de conflictos con inquilinos y otros terceros.
+                                    </li>
+                                    <li>
+                                        Asistencia en la redacción y negociación de contratos.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="w-full px-4 md:w-1/2 lg:w-1/3 py-4">
+                            <div className="mb-9 rounded-[20px] bg-white p-10 shadow-xl border hover:shadow-2xl md:px-7 xl:px-10 hover:cursor-pointer hover:text-mainAzul-100" style={{ height: '100%' }}>
+                                <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-mainAzul-100">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} className="w-12 h-12">
                                         <path color="white" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
                                     </svg>
@@ -140,31 +165,6 @@ export default function Administracion() {
                                     </li>
                                     <li>
                                         Acceso rápido y seguro a la información para propietarios e inquilinos.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="w-full px-4 md:w-1/2 lg:w-1/3 py-4">
-                            <div className="mb-9 rounded-[20px] bg-white p-10 shadow-xl border hover:shadow-2xl md:px-7 xl:px-10 hover:cursor-pointer hover:text-mainAzul-100" style={{ height: '100%' }}>
-                                <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-mainAzul-100">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.2} className="w-10 h-10">
-                                        <path color="white" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                                    </svg>
-
-                                </div>
-                                <h4 className="mb-[14px] text-2xl font-semibold text-dark">
-                                    Asesoría Legal e Inmobiliaria
-                                </h4>
-                                <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside">
-                                    <li>
-                                        Asesoramiento experto en cuestiones legales y fiscales relacionadas con la propiedad.
-                                    </li>
-                                    <li>
-                                        Resolución de conflictos con inquilinos y otros terceros.
-                                    </li>
-                                    <li>
-                                        Asistencia en la redacción y negociación de contratos.
                                     </li>
                                 </ul>
                             </div>

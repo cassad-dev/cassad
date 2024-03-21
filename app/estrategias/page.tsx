@@ -3,6 +3,7 @@
 import NavBar from "@/app/ui/navbar/NavBar";
 import Footer from "@/app/ui/Footer";
 import clsx from "clsx";
+import bgImage from "../../public/img/almacen.jpg";
 
 export default function Estrategias() {
 
@@ -24,84 +25,124 @@ export default function Estrategias() {
             {/* NAVBAR */}
             <NavBar />
 
-
-            <div className="bg-gray-100 overflow-y-hidden">
-                <div className="w-full px-6">
-                    <div className="mt-8 relative rounded-lg bg-mainAzul-100 container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
-                        <img className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg" alt="bg" />
-                        <img className="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg" />
-                        <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-14 lg:mb-6">
-                            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-white font-bold leading-tight">
-                                {property.name}
-                            </h1>
-                            <p className="text-gray-100 mt-2 text-lg text-center flex items-center justify-center">
-                                {property.location}
-                            </p>
-                        </div>
-                    </div>
-                    <div className="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
-                        <div className="relative sm:w-2/3 w-11/12">
-                            <img src={property.photo} alt="Sample Page" className="rounded-3xl" role="img" />
-                            <figcaption className="mt-2 text-lg text-center text-gray-500 flex justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                </svg>
-                                {property.address}
-                            </figcaption>
-                        </div>
-                    </div>
+            {/* FOTO background y TEXTO */}
+            <section
+                className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover"
+                style={{
+                    backgroundImage: `url(${bgImage.src})`,
+                    backgroundColor: "rgba(12, 64, 104, 0.8)",
+                    // backgroundSize: "cover",
+                    // backgroundPosition: "center",
+                    // backgroundAttachment: "fixed",
+                    // opacity: "0.5",
+                    height: "50vh",
+                }}
+            >
+                <div className="px-4 mx-auto max-w-screen-xl text-center flex flex-col items-center justify-center h-full">
+                    <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+                        Estrategias
+                    </h1>
+                    {/* <p className="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                        Nos diferenciamos en estrategias y soluciones de diagnóstico inmobiliario para conectar con clientes de una manera personal y sentido de pertenencia.          
+                        </p> */}
                 </div>
+            </section>
 
-                <div className="my-10">
+            {/* HEADER */}
+            <div className="overflow-y-hidden">
+
+                <div className="my-6">
                     <div className="mx-auto px-4 sm:px-6 lg:px-8">
                         <dl className="rounded-lg">
                             <div
                                 className="flex flex-col p-6 text-center">
                                 <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                                    Precio en pesos mexicanos
+                                    En Cassad, desarrollamos estrategias innovadoras y personalizadas para ayudar a nuestros clientes a alcanzar sus objetivos inmobiliarios y legales. Desde la optimización del valor de las propiedades hasta la resolución de problemas complejos, nuestro enfoque estratégico garantiza resultados exitosos y beneficios a largo plazo.
                                 </dt>
-                                <dd className="order-1 text-5xl font-extrabold text-gray-700">${property.price.toLocaleString()}</dd>
+                                {/* <dd className="order-1 text-5xl font-extrabold text-gray-700">${property.price.toLocaleString()}</dd> */}
                             </div>
                         </dl>
                     </div>
                 </div>
+
             </div>
 
-            <div className="container my-24 mx-auto px-6 text-center">
-                <section>
-                    {/* <h1 className="mb-4 text-4xl font-bold">
-                        Descripción
-                    </h1> */}
 
-                    <p className="mb-6">
-                        <span
-                            className={clsx(
-                                'text-xl font-medium me-2 px-2.5 py-1 rounded',
-                                {
-                                    'bg-gray-100 text-gray-800': property.type == 'Residencial',
-                                    'bg-blue-100 text-blue-800': property.type == 'Comercial',
-                                    'bg-green-100 text-green-800': property.type == 'Mixtas',
-                                    'bg-yellow-100 text-yellow-800': property.type == 'Terrenos',
-                                    'bg-indigo-100 text-indigo-800': property.type == 'Industrial',
-                                    'bg-purple-100 text-purple-800': property.type == 'Especiales',
-                                },
-                            )}
-                        >
-                            {property.type}
-                        </span>
-                        <span
-                            className={'text-xl font-medium me-2 px-2.5 py-1 rounded bg-gray-100 text-gray-800'}
-                        >
-                            {property.m_squared}m<sup>2</sup>
-                        </span>
-                    </p>
+            {/* ESTRATEGIAS */}
+            <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 gap-y-10 gap-x-6 items-start p-8 bg-gray-100">
 
-                    <p className="mb-6 text-xl text-gray-700">
-                        {property.description}
-                    </p>
-                </section>
-            </div>
+                <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
+                    <div className="order-1 sm:ml-6 lg:ml-0">
+                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                            <span className="mb-1 block text-sm leading-6 text-indigo-500">Maximiza el Valor</span>Desarrollo y Evaluación de Propiedades</h3>
+                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                            <p>Evaluación exhaustiva de las propiedades para identificar oportunidades y riesgos. Desarrollo de proyectos y planes de acción personalizados para maximizar el valor y el rendimiento.</p>
+                        </div>
+                    </div>
+                    <img src="/img/E_casas_modelo.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                </li>
+
+                <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
+                    <div className="order-1 sm:ml-6 lg:ml-0">
+                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                            <span className="mb-1 block text-sm leading-6 text-indigo-500">Estrategias Fiscales</span>Soluciones Inmobiliarias sin Litigio</h3>
+                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                            <p>Resolución de problemas inmobiliarios complejos sin recurrir a litigios costosos y prolongados. Implementación de estrategias fiscales y económicas para optimizar los beneficios de los inmuebles.</p>
+                        </div>
+                    </div>
+                    <img src="/img/E_analisis.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                </li>
+
+                <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
+                    <div className="order-1 sm:ml-6 lg:ml-0">
+                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                            <span className="mb-1 block text-sm leading-6 text-indigo-500">Inversiones Seguras</span>Análisis Detallado de Propiedades</h3>
+                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                            <p>Investigación detallada de propiedades para identificar posibles problemas legales o fiscales. Alertas inmobiliarias y recomendaciones para garantizar una inversión segura y rentable.</p>
+                        </div>
+                    </div>
+                    <img src="/img/E_llave_puerta.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                </li>
+
+                <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
+                    <div className="order-1 sm:ml-6 lg:ml-0">
+                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                            <span className="mb-1 block text-sm leading-6 text-indigo-500">Control Eficiente</span>Proyectos Legales de Administración</h3>
+                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                            <p>Diseño y desarrollo de proyectos legales para una gestión eficiente y efectiva de la información y los casos. Implementación de sistemas de medición de procesos para garantizar un seguimiento y control adecuados.</p>
+                        </div>
+                    </div>
+                    <img src="/img/E_planta.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                </li>
+
+            </ul>
+
+
+            {/* PRINCIPIOS DE ACTUACION */}
+            <section className="mt-10">
+                <div className="py-4 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+                    <div className="max-w-screen-md mb-8 lg:mb-16">
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Principios de Actuación</h2>
+
+                        <p className="text-gray-500 sm:text-xl py-3">
+                            <b>Integridad.</b> Nos comprometemos a actuar con honestidad y responsabilidad en todas nuestras interacciones y transacciones.
+                        </p>
+
+                        <p className="text-gray-500 sm:text-xl py-3">
+                            <b>Respeto y Empatía.</b> Fomentamos un ambiente de trabajo que promueva la confianza, el respeto y la cooperación entre nuestro equipo y nuestros clientes.
+                        </p>
+
+                        <p className="text-gray-500 sm:text-xl py-3">
+                            <b>Sinceridad en Resultados.</b> Estamos comprometidos con la creación de valor y la mejora continua de nuestros servicios, demostrando una responsabilidad personal por el éxito de nuestros clientes.
+                        </p>
+
+                        <p className="text-gray-500 sm:text-xl py-3">
+                            <b>Servicio Empresarial.</b> Nos destacamos por nuestra disponibilidad, actitud proactiva y enfoque orientado al cliente en todas nuestras actividades y servicios.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
 
             {/* FOOTER */}
             <Footer />

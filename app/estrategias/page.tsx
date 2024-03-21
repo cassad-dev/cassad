@@ -73,9 +73,9 @@ export default function Estrategias() {
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
                     <div className="order-1 sm:ml-6 lg:ml-0">
-                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                        <h3 className="mb-1 text-slate-900 font-semibold">
                             <span className="mb-1 block text-sm leading-6 text-indigo-500">Maximiza el Valor</span>Desarrollo y Evaluación de Propiedades</h3>
-                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                        <div className="prose prose-slate prose-sm text-slate-600">
                             <p>Evaluación exhaustiva de las propiedades para identificar oportunidades y riesgos. Desarrollo de proyectos y planes de acción personalizados para maximizar el valor y el rendimiento.</p>
                         </div>
                     </div>
@@ -84,9 +84,9 @@ export default function Estrategias() {
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
                     <div className="order-1 sm:ml-6 lg:ml-0">
-                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                        <h3 className="mb-1 text-slate-900 font-semibold">
                             <span className="mb-1 block text-sm leading-6 text-indigo-500">Estrategias Fiscales</span>Soluciones Inmobiliarias sin Litigio</h3>
-                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                        <div className="prose prose-slate prose-sm text-slate-600">
                             <p>Resolución de problemas inmobiliarios complejos sin recurrir a litigios costosos y prolongados. Implementación de estrategias fiscales y económicas para optimizar los beneficios de los inmuebles.</p>
                         </div>
                     </div>
@@ -95,9 +95,9 @@ export default function Estrategias() {
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
                     <div className="order-1 sm:ml-6 lg:ml-0">
-                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                        <h3 className="mb-1 text-slate-900 font-semibold">
                             <span className="mb-1 block text-sm leading-6 text-indigo-500">Inversiones Seguras</span>Análisis Detallado de Propiedades</h3>
-                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                        <div className="prose prose-slate prose-sm text-slate-600">
                             <p>Investigación detallada de propiedades para identificar posibles problemas legales o fiscales. Alertas inmobiliarias y recomendaciones para garantizar una inversión segura y rentable.</p>
                         </div>
                     </div>
@@ -106,9 +106,9 @@ export default function Estrategias() {
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
                     <div className="order-1 sm:ml-6 lg:ml-0">
-                        <h3 className="mb-1 text-slate-900 font-semibold dark:text-slate-200">
+                        <h3 className="mb-1 text-slate-900 font-semibold">
                             <span className="mb-1 block text-sm leading-6 text-indigo-500">Control Eficiente</span>Proyectos Legales de Administración</h3>
-                        <div className="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                        <div className="prose prose-slate prose-sm text-slate-600">
                             <p>Diseño y desarrollo de proyectos legales para una gestión eficiente y efectiva de la información y los casos. Implementación de sistemas de medición de procesos para garantizar un seguimiento y control adecuados.</p>
                         </div>
                     </div>

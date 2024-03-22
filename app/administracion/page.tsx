@@ -129,7 +129,7 @@ export default function Administracion() {
 
                                 </div>
                                 <h4 className="mb-[14px] text-2xl font-semibold text-dark">
-                                    Cobro de Rentas
+                                    Estrategia personalizada de rentabilidad
                                 </h4>
                                 <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside">
                                     <li>
@@ -140,6 +140,12 @@ export default function Administracion() {
                                     </li>
                                     <li>
                                         Reportes detallados de ingresos y gastos.
+                                    </li>
+                                    <li>
+                                        Análisis de factibilidad de uso de suelo.
+                                    </li>
+                                    <li>
+                                        Revisión detallada de características conforme a la ley.
                                     </li>
                                 </ul>
                             </div>
@@ -154,17 +160,17 @@ export default function Administracion() {
 
                                 </div>
                                 <h4 className="mb-[14px] text-2xl font-semibold text-dark">
-                                    Resguardo de Documentos
+                                    Prospectación y rentabilidad
                                 </h4>
                                 <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside">
                                     <li>
-                                        Custodia segura de todos los documentos relacionados con la propiedad.
+                                        Análisis de la situación e ubicación de cada propiedad.
                                     </li>
                                     <li>
-                                        Archivo y organización de contratos, facturas y otros documentos importantes.
+                                        Diseñar y ejecutar estrategias de rentabilidad para obtener una mejor plusvalía.
                                     </li>
                                     <li>
-                                        Acceso rápido y seguro a la información para propietarios e inquilinos.
+                                        Desarrollar y buscar la aportación a diferentes desarrolladoras.
                                     </li>
                                 </ul>
                             </div>
@@ -181,11 +187,11 @@ export default function Administracion() {
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Beneficios de Nuestro Servicio</h2>
 
                         <p className="text-gray-500 sm:text-xl py-3">
-                            <b>Tranquilidad y seguridad.</b> Confíe en nosotros para manejar todos los aspectos de la gestión de su propiedad, desde el cobro de rentas hasta la resolución de problemas legales, para que pueda concentrarse en otras áreas de su vida.
+                            <b>Tranquilidad y seguridad.</b> Confíe en nosotros para manejar todos los aspectos de la gestión de su propiedad, desde la administración de rentas hasta la resolución de problemas legales, para que pueda concentrarse en otras áreas de su vida.
                         </p>
 
                         <p className="text-gray-500 sm:text-xl py-3">
-                            <b>Profesionalismo y Eficiencia.</b> Nuestro equipo altamente capacitado y experimentado garantiza un servicio profesional y eficiente en todo momento, asegurando que sus intereses estén siempre protegidos.
+                            <b>Profesionalismo y Eficiencia.</b> Garantizamos un servicio profesional y eficiente en todo momento, asegurando que sus intereses estén siempre protegidos.
                         </p>
 
                         <p className="text-gray-500 sm:text-xl py-3">

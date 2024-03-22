@@ -54,7 +54,7 @@ export default function Servicios() {
                                         Administración de Propiedades:
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-500">
-                                        Nuestro servicio de administración de propiedades ofrece una gestión integral y eficiente para propietarios e inversores. Nos encargamos del cobro de rentas, mantenimiento, resolución de conflictos con inquilinos, y aseguramos el cumplimiento de todas las obligaciones legales y fiscales. Con más de una década de experiencia en el sector, garantizamos tranquilidad y seguridad en la gestión de su patrimonio inmobiliario.
+                                        Nuestro servicio de administración de propiedades ofrece una gestión integral y eficiente para propietarios. Nos encargamos de asegurar el cumplimiento de todas las obligaciones legales y fiscales, renegociar las cláusulas de los contratos y las nuevas condiciones del mercado, así como gestionar el cobro de rentas, el mantenimiento y la resolución de conflictos con los inquilinos.
                                     </p>
                                     {/* <div className="mt-6">
                                         <a className="inline-flex rounded-lg bg-mainAzul-100 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-800 hover:bg-blue-800 hover:ring-blue-900"
@@ -97,7 +97,7 @@ export default function Servicios() {
                                         Representación de Propietarios:
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-500">
-                                        En Cassad, representamos los intereses de los propietarios en negociaciones y contratos, asegurando condiciones favorables y protegiendo sus derechos. Nuestro equipo legal altamente capacitado se encarga de garantizar que cada acuerdo beneficie a nuestros clientes y resuelva eficazmente cualquier disputa o conflicto que pueda surgir.
+                                        Representamos los intereses de los propietarios en negociaciones y contratos, asegurando condiciones favorables y protegiendo sus derechos. Garantizamos que cada acuerdo beneficie a nuestros clientes y resuelva eficazmente cualquier disputa o conflicto que pueda surgir.
                                     </p>
                                     {/* <div className="mt-6">
                                         <a className="inline-flex rounded-lg bg-mainAzul-100 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-800 hover:bg-blue-800 hover:ring-blue-900"
@@ -183,7 +183,7 @@ export default function Servicios() {
                                         Renegociación de Contratos:
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-500">
-                                        Nuestro servicio de renegociación de contratos está diseñado para proteger los intereses de nuestros clientes y maximizar sus beneficios. Ya sea para modificar términos y condiciones existentes o para negociar nuevos contratos, nuestro equipo legal ofrece asesoramiento experto y estrategias efectivas para garantizar acuerdos justos y favorables.
+                                        Nos encargamos de sugerir, proponer y modificar los términos y condiciones existentes para negociar nuevos contratos ofreciendo asesoramiento experto y estrategias efectivas para garantizar acuerdos justos y favorables.
                                     </p>
                                     {/* <div className="mt-6">
                                         <a className="inline-flex rounded-lg bg-mainAzul-100 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-800 hover:bg-blue-800 hover:ring-blue-900"
@@ -227,8 +227,7 @@ export default function Servicios() {
                                         Protección de Escrituras:
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-500">
-                                        En Cassad, entendemos la importancia de proteger su patrimonio inmobiliario. Nuestro servicio de protección de escrituras garantiza la legalidad y seguridad de todos los documentos relacionados con sus propiedades, evitando riesgos legales y asegurando una titularidad clara y transparente.
-                                    </p>
+                                        Nos encargamos de promover y solicitar alertas inmobiliarias para detectar a tiempo posibles fraudes y suplantaciones de identidad para proteger el patrimonio de las empresas y las personas en lo individual, así como cotizar y planear estrategias de protección al patrimonio.                                    </p>
                                     {/* <div className="mt-6">
                                         <a className="inline-flex rounded-lg bg-mainAzul-100 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-800 hover:bg-blue-800 hover:ring-blue-900"
                                             href="/login">
@@ -269,7 +268,7 @@ export default function Servicios() {
                                         Investigación de Propiedades:
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-500">
-                                        Realizamos análisis exhaustivos de propiedades para proporcionar a nuestros clientes información precisa y detallada sobre el estado y el potencial de cada activo. Desde la verificación de títulos de propiedad hasta la evaluación de riesgos y oportunidades de inversión, nuestras investigaciones inmobiliarias ayudan a tomar decisiones informadas y estratégicas.
+                                        Realizamos análisis exhaustivos de títulos de propiedades para proporcionar toda la información necesaria y detallada sobre el estado y el potencial de cada activo. Desde la verificación de títulos de propiedad hasta la evaluación de riesgos y oportunidades de inversión, nuestras investigaciones inmobiliarias ayudan a tomar decisiones informadas y estratégicas.
                                     </p>
                                     {/* <div className="mt-6">
                                         <a className="inline-flex rounded-lg bg-mainAzul-100 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-800 hover:bg-blue-800 hover:ring-blue-900"

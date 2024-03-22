@@ -16,7 +16,9 @@ export default function Conocenos() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
                             Sobre <span className="text-mainAzul-100">Nosotros</span>
                         </h1>
-                        <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg">Descubra quiénes somos y nuestros valores fundamentales en Cassad, donde la confianza, las relaciones interpersonales y la experiencia se combinan para ofrecer soluciones excepcionales. </p>
+                        <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg">
+                            Descubra quiénes somos y nuestros valores fundamentales en Cassad, donde la confianza, las relaciones interpersonales y la experiencia se combinan para ofrecer soluciones estratégicas.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -43,7 +45,7 @@ export default function Conocenos() {
                                 <p className="text-base font-semibold leading-7 text-mainAzul-100">Cassad</p>
                                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Quiénes Somos</h1>
                                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                                    En Cassad, nos dedicamos a ofrecer soluciones inmobiliarias y legales de alta calidad para satisfacer las necesidades de nuestros clientes. Con una experiencia sólida de más de una década en el sector, nos esforzamos por brindar un servicio excepcional que se adapte a las necesidades individuales de cada cliente.
+                                    Nos dedicamos a diagnosticar situaciones y problemáticas inmobiliarias y legales para satisfacer las necesidades de nuestros clientes. Con una experiencia sólida de más de una década en el sector, nos esforzamos por brindar un servicio personalizado que se adapte a las necesidades individuales de cada cliente.
                                 </p>
                             </div>
                         </div>
@@ -55,7 +57,7 @@ export default function Conocenos() {
                         <div className="lg:pr-4">
                             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                                 <p>
-                                    Proporcionamos una amplia gama de servicios especializados en el ámbito inmobiliario y legal. Desde la gestión de propiedades hasta la representación legal, nuestro objetivo es ofrecer soluciones integrales que superen las expectativas de nuestros clientes y les permitan alcanzar sus objetivos con confianza y tranquilidad.
+                                    Proporcionamos una amplia gama de servicios especializados en el ámbito inmobiliario y legal. Desde la gestión de propiedades hasta la representación legal, nuestro objetivo es ofrecer mayor rentabilidad en las propiedades que superen las expectativas de nuestros clientes y les permitan alcanzar sus objetivos económicos con confianza y tranquilidad.
                                 </p>
                                 <p>
                                     Nos basamos en los siguientes valores:
@@ -73,7 +75,7 @@ export default function Conocenos() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mt-1 h-5 w-5 flex-none text-mainAzul-100">
                                             <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
                                         </svg>
-                                        <span><strong className="font-semibold text-gray-900">Relaciones Interpersonales.</strong> Valoramos las relaciones personales y nos comprometemos a establecer conexiones genuinas con nuestros clientes, comprendiendo sus necesidades individuales y proporcionando un servicio personalizado.</span>
+                                        <span><strong className="font-semibold text-gray-900">Relaciones Interpersonales.</strong> Reconocemos la importancia de poner a la persona como centro y nos comprometemos a satisfacer sus intereses comprendiendo sus necesidades individuales y proporcionando un servicio personalizado.</span>
                                     </li>
 
                                     <li className="flex gap-x-3">
@@ -87,7 +89,7 @@ export default function Conocenos() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mt-1 h-5 w-5 flex-none text-mainAzul-100">
                                             <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
                                         </svg>
-                                        <span><strong className="font-semibold text-gray-900">Conocimiento del Ámbito Legal.</strong> Nuestro equipo cuenta con un sólido conocimiento del ámbito legal, asegurando un asesoramiento experto y estratégico en todas las cuestiones legales relacionadas con el sector inmobiliario.</span>
+                                        <span><strong className="font-semibold text-gray-900">Conocimiento del Ámbito Legal.</strong> Nos encontramos en constante actualización de regulaciones locales y nacionales para poder ofrecer el mejor servicio y estrategia posible.</span>
                                     </li>
 
                                     <li className="flex gap-x-3">
@@ -100,7 +102,7 @@ export default function Conocenos() {
 
                                 </ul>
 
-                                <p className="mt-8">Nuestras fortalezas se basan en nuestra vasta experiencia en el sector y en nuestro compromiso con la excelencia en todo lo que hacemos. Nos enorgullece ofrecer un servicio personalizado y de alta calidad, respaldado por un equipo altamente capacitado y comprometido con la satisfacción del cliente en todo momento.</p>
+                                {/* <p className="mt-8">Nuestras fortalezas se basan en nuestra vasta experiencia en el sector y en nuestro compromiso con la excelencia en todo lo que hacemos. Nos enorgullece ofrecer un servicio personalizado y de alta calidad, respaldado por un equipo altamente capacitado y comprometido con la satisfacción del cliente en todo momento.</p> */}
                                 {/* <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
                                 <p className="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p> */}
                             </div>

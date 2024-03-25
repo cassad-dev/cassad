@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,11 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:title" content="Cassad" />
-        <meta property="og:description" content="Servicios inmobiliarios y legales" />
-        <meta property="og:image" content="https://cassad.vercel.app/logos/logo_fondo_blanco.jpg" />
-      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );

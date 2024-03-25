@@ -16,6 +16,21 @@ export default function Home() {
       {/* NAVBAR */}
       <NavBar />
 
+      <title>Cassad</title>
+      <meta name="description" content="Servicios inmobiliarios y legales" />
+
+      <meta property="og:url" content="https://www.cassad.com.mx/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Cassad" />
+      <meta property="og:description" content="Servicios inmobiliarios y legales" />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/3873af4a-fb44-458c-8ec6-b4c42c34d151.png?token=JRD39n-3y9VodF4Q_XpaaWuW7VEBpXrGlo5v0Ak4NsU&height=630&width=1200&expires=33247349113" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="cassad.com.mx" />
+      <meta property="twitter:url" content="https://www.cassad.com.mx/" />
+      <meta name="twitter:title" content="Cassad" />
+      <meta name="twitter:description" content="Servicios inmobiliarios y legales" />
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/3873af4a-fb44-458c-8ec6-b4c42c34d151.png?token=JRD39n-3y9VodF4Q_XpaaWuW7VEBpXrGlo5v0Ak4NsU&height=630&width=1200&expires=33247349113" />
 
       {/* FOTO background y TEXTO */}
       <section

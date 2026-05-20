@@ -2,26 +2,56 @@ import Link from "next/link";
 import clsx from "clsx";
 
 export default function NavLink({
-    name, href, path,
+  name, href, path, mobile,
 }: {
-    name: string;
-    href: string;
-    path: string;
+  name: string;
+  href: string;
+  path: string;
+  mobile?: boolean;
 }) {
+  const isActive = path === href;
+
+  if (mobile) {
     return (
-        <li>
-            <Link
-                href={href}
-                className={clsx(
-                    'block py-2 px-3 rounded md:rounded-none hover:text-blue-700 md:p-0 border-b-2 border-transparent md:hover:border-b-2 md:hover:border-blue-700',
-                    {
-                        'text-white bg-mainAzul-100 md:bg-transparent md:text-blue-700': path == href,
-                        'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent': path != href,
-                    },
-                )}
-            >
-                {name}
-            </Link>
-        </li>
-    )
+      <li>
+        <Link
+          href={href}
+          className={clsx(
+            'block py-3 text-sm font-medium border-b border-gray-50 transition-colors duration-150',
+            isActive
+              ? 'text-cassad-blue'
+              : 'text-gray-500 hover:text-gray-900',
+          )}
+        >
+          <span className="flex items-center gap-2">
+            {isActive && (
+              <span className="w-1 h-1 rounded-full bg-cassad-blue flex-shrink-0" />
+            )}
+            {name}
+          </span>
+        </Link>
+      </li>
+    );
+  }
+
+  return (
+    <li>
+      <Link
+        href={href}
+        className={clsx(
+          'relative block text-sm font-medium py-1 transition-colors duration-150 group',
+          isActive ? 'text-cassad-blue' : 'text-gray-500 hover:text-gray-900',
+        )}
+      >
+        {name}
+        {/* Underline indicator — always shown for active, slides in on hover */}
+        <span
+          className={clsx(
+            'absolute left-0 -bottom-px h-px bg-cassad-blue transition-all duration-200',
+            isActive ? 'w-full' : 'w-0 group-hover:w-full',
+          )}
+        />
+      </Link>
+    </li>
+  );
 }

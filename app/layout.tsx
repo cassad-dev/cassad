@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { siteConfig } from "@/lib/seo";
 import JsonLd from "./ui/JsonLd";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
-const inter = Inter({ subsets: ["latin"] });
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -44,7 +54,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es-MX">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${plusJakarta.variable} font-sans`}>
         <JsonLd />
         {children}
       </body>

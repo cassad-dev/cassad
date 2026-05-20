@@ -1,461 +1,245 @@
 'use client'
 
 import Image from "next/image";
-import bgImage from "../public/home2.jpg";
+import Link from "next/link";
 import NavBar from "./ui/navbar/NavBar";
 import Footer from "./ui/Footer";
-import Link from "next/link";
 import ContactForm from "./ui/ContactForm";
 
-export default function Home() {
+const services = [
+  {
+    number: '01',
+    title: 'Administración de Propiedades',
+    description: 'Gestión integral: cobro de rentas, resguardo de documentos, asesoría legal y coordinación de mantenimiento.',
+  },
+  {
+    number: '02',
+    title: 'Representación de Propietarios',
+    description: 'Defensa de sus intereses en negociaciones y contratos, garantizando condiciones favorables y resolución de conflictos.',
+  },
+  {
+    number: '03',
+    title: 'Soluciones Inmobiliarias',
+    description: 'Estrategias personalizadas para optimizar el valor y el rendimiento de sus activos inmobiliarios.',
+  },
+  {
+    number: '04',
+    title: 'Renegociación de Contratos',
+    description: 'Análisis y modificación de términos contractuales para obtener las mejores condiciones posibles.',
+  },
+  {
+    number: '05',
+    title: 'Protección de Escrituras',
+    description: 'Alertas inmobiliarias y estrategias para proteger la titularidad y seguridad documental de su patrimonio.',
+  },
+  {
+    number: '06',
+    title: 'Investigación de Propiedades',
+    description: 'Análisis exhaustivo de títulos, verificación legal y evaluación de riesgos antes de cualquier transacción.',
+  },
+];
 
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
 
-      {/* NAVBAR */}
       <NavBar />
 
-      {/* FOTO background y TEXTO */}
+      {/* HERO */}
       <section
-        className="bg-center bg-no-repeat bg-blend-multiply bg-slate-600 bg-cover"
+        className="relative flex items-center"
         style={{
-          backgroundImage: `url(${bgImage.src})`,
-          backgroundColor: "rgba(12, 64, 104, 0.8)",
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          // backgroundAttachment: "fixed",
-          // opacity: "0.5",
-          height: "70vh",
+          height: 'calc(100vh - 64px)',
+          background: `linear-gradient(rgba(12,64,104,0.88), rgba(12,64,104,0.93)), url('/home2.jpg') center / cover no-repeat`,
         }}
       >
-        <div className="px-4 mx-auto max-w-screen-xl text-center flex flex-col items-center justify-center h-full">
-          <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
-            Expertos en soluciones <span className="text-slate-400">legales</span> e <span className="text-slate-400">inmobiliarias</span>
-          </h1>
-          <p className="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-            Nos diferenciamos en estrategias y soluciones de diagnóstico inmobiliario para ayudar a los clientes en situaciones personales y problemáticas de negocio.
+        <div className="max-w-screen-xl mx-auto px-6 w-full">
+          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/50 mb-10">
+            Monterrey, México&nbsp;&nbsp;·&nbsp;&nbsp;Proptech &amp; Consultoría Legal
           </p>
-          {/* <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-mainAzul-100 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
-              Get started
-              <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-            <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-              Learn more
-            </a>
-          </div> */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold text-white leading-[1.08] tracking-tight mb-8 max-w-4xl">
+            Protección, diagnóstico y estrategia para tu patrimonio inmobiliario
+          </h1>
+          <p className="text-lg text-white/65 max-w-2xl mb-12 leading-relaxed font-light">
+            Más de una década acompañando a propietarios con soluciones legales, análisis estratégico y gestión integral de activos inmobiliarios.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/servicios"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
+            >
+              Nuestros Servicios
+            </Link>
+            <Link
+              href="#contacto"
+              className="inline-flex items-center justify-center px-8 py-4 border border-white/40 text-white font-semibold text-[11px] tracking-[0.2em] uppercase hover:border-white/70 hover:bg-white/5 transition-all duration-200"
+            >
+              Contáctanos
+            </Link>
+          </div>
         </div>
       </section>
 
+      {/* ABOUT */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-      {/* Barra CONTACTO */}
-      <div className="w-full mx-auto px-6">
-        <section>
-          <div className="px-6 md:px-12 bg-slate-200 rounded-xl">
-            <div
-              className="block px-6 py-4 md:px-12 mt-[-50px]">
-
-              {/* bigger screens */}
-              <div className="hidden md:block">
-
-                <div className="flex items-center justify-center mx-auto text-center lg:mb-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary mr-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                  </svg>
-                  <h6 className="font-medium">Monterrey, México</h6>
-
-                  <p className="mx-10">|</p>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-8 w-8 text-primary mr-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                  </svg>
-                  <h6 className="font-medium">mmcassad@gmail.com </h6>
+            <div>
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-8">
+                Quiénes Somos
+              </p>
+              <Image
+                src="/logos/logo_azul.png"
+                alt="Cassad"
+                width={180}
+                height={60}
+                className="mb-10"
+              />
+              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+                Cassad ofrece soluciones integrales en servicios inmobiliarios y legales con más de 10 años de experiencia. Destacamos en gestión de propiedades, negociación de contratos y protección de activos.
+              </p>
+              <p className="text-gray-400 leading-relaxed mb-12">
+                Nos diferenciamos por la atención personalizada, el análisis multidisciplinario y un enfoque orientado a la protección real de su patrimonio.
+              </p>
+              <div className="grid grid-cols-2 gap-8">
+                <div className="border-l-2 border-cassad-blue pl-6">
+                  <p className="text-4xl font-bold text-cassad-blue">+10</p>
+                  <p className="text-sm text-gray-400 mt-1 tracking-wide">Años de experiencia</p>
                 </div>
-
-              </div>
-
-              {/* smaller screens */}
-              <div className="block md:hidden">
-
-                <div className="mx-auto py-3 text-center lg:mb-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-4 h-8 w-8 text-primary dark:text-primary-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                  </svg>
-                  <h6 className="font-medium">Monterrey, México</h6>
-                </div>
-
-                <hr className="bg-slate-400 h-0.5 my-2" />
-
-                <div className="mx-auto py-3 text-center lg:mb-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                    stroke="currentColor" className="mx-auto mb-4 h-8 w-8 text-primary dark:text-primary-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                  </svg>
-                  <h6 className="font-medium">mmcassad@gmail.com</h6>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </section>
-      </div>
-
-
-      {/* HERO con FOTO */}
-      <div className="relative pb-[110px] pt-16">
-        <div className="">
-          <div className="flex flex-wrap">
-
-            <div className="w-full px-10 md:px-20 text-center mx-auto lg:text-left lg:w-6/12 lg:flex lg:items-center">
-              <div className="hero-content">
-                <Image
-                  src="/logos/logo_azul.png"
-                  alt="logo azul"
-                  className="mb-8 mx-auto lg:mx-0"
-                  height={130}
-                  width={390}
-                />
-                {/* <h1 className="mb-10 text-6xl font-bold tracking-tight">
-                  Administración <br /> en el ámbito <br /><span className="text-mainAzul-100">legal</span> y <span className="text-mainAzul-100">tecnológico</span>
-                </h1> */}
-                <p className="mb-8 max-w-[480px] text-lg md:text-xl text-body-color mx-auto lg:mx-0">
-                  Cassad ofrece soluciones integrales en servicios inmobiliarios y legales con más de 10 años de experiencia. Destacamos en gestión de propiedades, negociación de contratos y protección de activos. Nos diferenciamos por la atención personalizada y calidad excepcional.                </p>
-                <ul className="flex flex-wrap mx-auto justify-center lg:justify-normal">
-                  <li>
-                    <Link
-                      href="/servicios"
-                      className="inline-flex items-center justify-center rounded-md bg-mainAzul-100 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-500 lg:px-7 mb-3 xl:mb-0"
-                    >
-                      Ver servicios
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/conocenos"
-                      className="inline-flex items-center justify-center rounded-md border border-gray-900 px-5 py-3 ml-2 text-center text-base font-medium text-gray-900 hover:bg-gray-300 lg:px-7"
-                    >
-                      <span className="mr-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </span>
-                      Conócenos
-                    </Link>
-                  </li>
-                </ul>
-                <div className="clients pt-16">
-                  <h6 className="mb-6 flex items-center text-md font-normal text-body-color justify-center lg:justify-normal">
-                    Algunos de nuestros clientes:
-                  </h6>
-
-                  <div className="flex space-x-4">
-
-                    <a className="flex w-full items-center justify-center">
-                      <img src={'/logos/believebytere-logo.png'} alt="Logo Believe By Tere" className="h-16 object-contain" />
-                    </a>
-
-                    <a className="flex w-full items-center justify-center">
-                      <img src={'/logos/fanatiker-logo.png'} alt="Logo Fanatiker" className="h-16 object-contain" />
-                    </a>
-
-                    <a className="flex w-full items-center justify-center">
-                      <img src={'/logos/grupolomex-logo.png'} alt="Logo Grupo Lomex" className="h-16 object-contain" />
-                    </a>
-
-                  </div>
+                <div className="border-l-2 border-gray-200 pl-6">
+                  <p className="text-4xl font-bold text-gray-900">6</p>
+                  <p className="text-sm text-gray-400 mt-1 tracking-wide">Servicios especializados</p>
                 </div>
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-6/12 mx-auto">
-              <div className="lg:ml-auto lg:text-right">
-                <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                  <img
-                    src="/home.jpg"
-                    alt="Asesoria profesional en soluciones legales e inmobiliarias"
-                    className="lg:ml-auto rounded-lg mx-auto"
-                    style={{ borderTopLeftRadius: "100px", width: "90%" }}
-                  />
-                  <span className="absolute -bottom-8 -left-8 z-[-1]">
-                    <svg
-                      width="93"
-                      height="93"
-                      viewBox="0 0 93 93"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="2.5" cy="2.5" r="2.5" fill="#0c4068" />
-                      <circle cx="2.5" cy="24.5" r="2.5" fill="#0c4068" />
-                      <circle cx="2.5" cy="46.5" r="2.5" fill="#0c4068" />
-                      <circle cx="2.5" cy="68.5" r="2.5" fill="#0c4068" />
-                      <circle cx="2.5" cy="90.5" r="2.5" fill="#0c4068" />
-                      <circle cx="24.5" cy="2.5" r="2.5" fill="#0c4068" />
-                      <circle cx="24.5" cy="24.5" r="2.5" fill="#0c4068" />
-                      <circle cx="24.5" cy="46.5" r="2.5" fill="#0c4068" />
-                      <circle cx="24.5" cy="68.5" r="2.5" fill="#0c4068" />
-                      <circle cx="24.5" cy="90.5" r="2.5" fill="#0c4068" />
-                      <circle cx="46.5" cy="2.5" r="2.5" fill="#0c4068" />
-                      <circle cx="46.5" cy="24.5" r="2.5" fill="#0c4068" />
-                      <circle cx="46.5" cy="46.5" r="2.5" fill="#0c4068" />
-                      <circle cx="46.5" cy="68.5" r="2.5" fill="#0c4068" />
-                      <circle cx="46.5" cy="90.5" r="2.5" fill="#0c4068" />
-                      <circle cx="68.5" cy="2.5" r="2.5" fill="#0c4068" />
-                      <circle cx="68.5" cy="24.5" r="2.5" fill="#0c4068" />
-                      <circle cx="68.5" cy="46.5" r="2.5" fill="#0c4068" />
-                      <circle cx="68.5" cy="68.5" r="2.5" fill="#0c4068" />
-                      <circle cx="68.5" cy="90.5" r="2.5" fill="#0c4068" />
-                      <circle cx="90.5" cy="2.5" r="2.5" fill="#0c4068" />
-                      <circle cx="90.5" cy="24.5" r="2.5" fill="#0c4068" />
-                      <circle cx="90.5" cy="46.5" r="2.5" fill="#0c4068" />
-                      <circle cx="90.5" cy="68.5" r="2.5" fill="#0c4068" />
-                      <circle cx="90.5" cy="90.5" r="2.5" fill="#0c4068" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
+            <div className="relative">
+              <img
+                src="/home.jpg"
+                alt="Asesoría profesional en soluciones legales e inmobiliarias"
+                className="w-full object-cover"
+                style={{ aspectRatio: '4/3' }}
+              />
+              <div
+                className="absolute -bottom-6 -left-6 w-28 h-28 pointer-events-none"
+                style={{ backgroundColor: 'rgba(12,64,104,0.1)' }}
+              />
             </div>
 
           </div>
         </div>
-      </div>
+      </section>
 
+      {/* SERVICES */}
+      <section className="py-24 lg:py-32" style={{ backgroundColor: '#f8f8f8' }}>
+        <div className="max-w-screen-xl mx-auto px-6">
 
-      {/* CLIENTES */}
-      {/* <section className="bg-slate-200 py-6 lg:py-6">
-        <div className="container mx-auto">
-
-          <h2 className="my-6 text-4xl font-bold text-center">Clientes</h2>
-
-          <div className="mb-3">
-            <hr className="w-12 mx-auto" style={{ border: 'none', height: '8px', background: '#0c4068' }} />
-          </div>
-
-          <div className="flex flex-wrap ">
-            <div className="w-full px-4">
-              <div className="flex flex-wrap items-center justify-center">
-
-                <div
-                  className="mx-4 flex w-[150px] items-center justify-center py-4 2xl:w-[180px]"
-                >
-                  <img src={"/logos/believebytere-logo.png"} alt={"Believe by Tere logo"} className="w-full" />
-                </div>
-
-                <div
-                  className="mx-4 flex w-[150px] items-center justify-center py-4 px-4 2xl:w-[180px]"
-                >
-                  <img src={"/logos/fanatiker-logo.png"} alt={"Fanatiker logo"} className="w-full" />
-                </div>
-
-                <div
-                  className="mx-4 flex w-[150px] items-center justify-center py-4 2xl:w-[180px]"
-                >
-                  <img src={"/logos/grupolomex-logo.png"} alt={"Grupo Lomex logo"} className="w-full" />
-                </div>
-
-              </div>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 mb-16">
+            <div>
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-4">
+                Lo que ofrecemos
+              </p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                Servicios especializados para su patrimonio
+              </h2>
+            </div>
+            <div className="lg:pt-10">
+              <p className="text-gray-500 leading-relaxed">
+                Cada servicio está diseñado para brindar certeza jurídica, protección patrimonial y acompañamiento estratégico a propietarios e inversionistas.
+              </p>
             </div>
           </div>
+
+          {/* Cards grid — gap-px with bg-gray-200 creates thin divider lines */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
+            {services.map((service) => (
+              <div
+                key={service.number}
+                className="group bg-white p-10 hover:bg-cassad-blue transition-colors duration-300 cursor-default"
+              >
+                <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-cassad-blue group-hover:text-white/40 mb-6">
+                  {service.number}
+                </p>
+                <h3 className="text-base font-bold text-gray-900 group-hover:text-white mb-4 leading-snug">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/servicios"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-cassad-blue tracking-[0.08em] uppercase hover:gap-4 transition-all duration-200"
+            >
+              Ver todos los servicios
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+
         </div>
-      </section> */}
+      </section>
 
-
-      {/* SERVICIOS */}
-      <div className="bg-gray-100">
-        <div className="container my-24 mx-auto px-6">
-          <section className="text-center">
-
-            <div className="flex flex-wrap">
-              <div className="w-full px-4">
-                <div className="mx-auto max-w-[510px] text-center mb-10">
-                  <span className="mb-2 block text-2xl font-semibold text-primary">
-                    Nuestros Servicios
-                  </span>
-                  <h2 className="mb-3 text-4xl lg:text-5xl font-bold leading-[1.2] text-dark">
-                    Lo que ofrecemos
-                  </h2>
-                  <p className="text-base text-body-color">
-                    Descubre los servicios que ofrecemos para ti.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mb-20">
-              <hr className="w-16 mx-auto" style={{ border: 'none', height: '8px', background: '#0c4068' }} />
-            </div>
-
-            <div className="grid lg:grid-cols-3 lg:gap-x-12 lg:mb-14">
-
-              <div className="mb-12 lg:mb-0">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                        stroke="currentColor" className="h-7 w-7">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                          d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Administración de Propiedades
-                    </h5>
-                    <p>
-                      Gestión integral de propiedades, incluyendo cobro de rentas, resguardo de documentos y asesoría legal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-12 lg:mb-0">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                        stroke="currentColor" className="h-7 w-7">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Representación de Propietarios
-                    </h5>
-                    <p>
-                      Defensa de los intereses de los propietarios en negociaciones y contratos.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-12 lg:mb-0">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                        stroke="currentColor" className="h-7 w-7">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                          d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Soluciones Inmobiliarias
-                    </h5>
-                    <p>
-                      Estrategias innovadoras para optimizar el valor y el rendimiento de las propiedades.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div className="grid lg:grid-cols-3 lg:gap-x-12">
-
-              <div className="mb-12 lg:mb-0">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2}
-                        stroke="currentColor" className="h-7 w-7">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Renegociación de Contratos
-                    </h5>
-                    <p>
-                      Renegociación de términos y condiciones para obtener los mejores beneficios.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-12 lg:mb-0">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                        stroke="currentColor" className="h-7 w-7">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
-                      </svg>
-
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Protección de Escrituras
-                    </h5>
-                    <p>
-                      Garantía de seguridad y legalidad en la documentación de propiedades.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="">
-                <div
-                  className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-2xl hover:text-mainAzul-100 hover:cursor-pointer">
-                  <div className="flex justify-center">
-                    <div className="-mt-8 inline-block rounded-full p-4 text-primary shadow-md" style={{ backgroundColor: 'rgba(12,64,104,0.2)' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                        stroke="currentColor" className="h-7 w-7">  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
-                      </svg>
-
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-4 text-lg font-semibold">
-                      Investigación de Propiedades
-                    </h5>
-                    <p>
-                      Análisis exhaustivo de propiedades y alertas inmobiliarias para prevenir riesgos.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </section>
+      {/* CTA BLOCK */}
+      <section className="bg-cassad-blue py-24 lg:py-32">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-8">
+              Acompañamiento estratégico
+            </p>
+            <h2 className="text-3xl lg:text-5xl font-bold text-white leading-tight mb-8">
+              Cada propiedad tiene una historia. Nosotros la protegemos.
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl">
+              Diagnóstico multidisciplinario, protección de activos y acompañamiento estratégico para personas y empresas en Monterrey y su área metropolitana.
+            </p>
+            <Link
+              href="#contacto"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
+            >
+              Iniciar Diagnóstico
+            </Link>
+          </div>
         </div>
+      </section>
+
+      {/* CONTACT */}
+      <div id="contacto">
+        <ContactForm />
       </div>
 
+      {/* CLIENT LOGOS */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-screen-xl mx-auto px-6">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gray-400 text-center mb-10">
+            Algunos de nuestros clientes
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-16">
+            <img
+              src="/logos/believebytere-logo.png"
+              alt="Believe By Tere"
+              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+            />
+            <img
+              src="/logos/fanatiker-logo.png"
+              alt="Fanatiker"
+              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+            />
+            <img
+              src="/logos/grupolomex-logo.png"
+              alt="Grupo Lomex"
+              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+            />
+          </div>
+        </div>
+      </section>
 
-      {/* Form CONTACTO */}
-      {/* https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644 */}
-      <ContactForm />
-
-
-      {/* FOOTER */}
       <Footer />
 
     </main>

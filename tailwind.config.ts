@@ -8,16 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-jakarta)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
+        'cassad-blue': '#0C4068',
+        'cassad-black': '#000000',
+        'cassad-white': '#FFFFFF',
         mainAzul: {
           100: '#0c4068',
         },
-      }
+      },
     },
   },
   plugins: [],

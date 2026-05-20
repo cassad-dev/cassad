@@ -17,18 +17,26 @@ export default function NavLink({
         <Link
           href={href}
           className={clsx(
-            'block py-3 text-sm font-medium border-b border-gray-50 transition-colors duration-150',
+            'flex items-center justify-between px-4 py-3.5 rounded-lg text-sm font-medium transition-colors duration-150',
             isActive
-              ? 'text-cassad-blue'
-              : 'text-gray-500 hover:text-gray-900',
+              ? 'bg-cassad-blue/8 text-cassad-blue'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
           )}
         >
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-3">
             {isActive && (
-              <span className="w-1 h-1 rounded-full bg-cassad-blue flex-shrink-0" />
+              <span className="w-1.5 h-1.5 rounded-full bg-cassad-blue flex-shrink-0" />
+            )}
+            {!isActive && (
+              <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" />
             )}
             {name}
           </span>
+          {isActive && (
+            <svg className="h-3.5 w-3.5 text-cassad-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          )}
         </Link>
       </li>
     );

@@ -1,6 +1,5 @@
 'use client'
 
-import React, { useState } from "react";
 import Image from "next/image";
 import bgImage from "../public/home2.jpg";
 import NavBar from "./ui/navbar/NavBar";
@@ -15,22 +14,6 @@ export default function Home() {
 
       {/* NAVBAR */}
       <NavBar />
-
-      <title>Cassad</title>
-      <meta name="description" content="Servicios inmobiliarios y legales" />
-
-      <meta property="og:url" content="https://www.cassad.com.mx/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Cassad" />
-      <meta property="og:description" content="Servicios inmobiliarios y legales" />
-      <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/3873af4a-fb44-458c-8ec6-b4c42c34d151.png?token=JRD39n-3y9VodF4Q_XpaaWuW7VEBpXrGlo5v0Ak4NsU&height=630&width=1200&expires=33247349113" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="cassad.com.mx" />
-      <meta property="twitter:url" content="https://www.cassad.com.mx/" />
-      <meta name="twitter:title" content="Cassad" />
-      <meta name="twitter:description" content="Servicios inmobiliarios y legales" />
-      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/3873af4a-fb44-458c-8ec6-b4c42c34d151.png?token=JRD39n-3y9VodF4Q_XpaaWuW7VEBpXrGlo5v0Ak4NsU&height=630&width=1200&expires=33247349113" />
 
       {/* FOTO background y TEXTO */}
       <section
@@ -114,7 +97,7 @@ export default function Home() {
                     stroke="currentColor" className="mx-auto mb-4 h-8 w-8 text-primary dark:text-primary-400">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
-                  <h6 className="font-medium">contacto@cassad.com.mx</h6>
+                  <h6 className="font-medium">mmcassad@gmail.com</h6>
                 </div>
 
               </div>
@@ -207,7 +190,7 @@ export default function Home() {
                 <div className="relative z-10 inline-block pt-11 lg:pt-0">
                   <img
                     src="/home.jpg"
-                    alt="hero"
+                    alt="Asesoria profesional en soluciones legales e inmobiliarias"
                     className="lg:ml-auto rounded-lg mx-auto"
                     style={{ borderTopLeftRadius: "100px", width: "90%" }}
                   />

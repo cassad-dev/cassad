@@ -110,7 +110,7 @@ export default function Servicios() {
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img alt="Inbox user interface" loading="lazy" width="647" height="486"
+                                <img alt="Representacion legal y negociacion inmobiliaria para propietarios" loading="lazy" width="647" height="486"
                                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                                     style={{ color: 'transparent' }} src="/img/representacion.jpg">
                                 </img>
@@ -153,7 +153,7 @@ export default function Servicios() {
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img loading="lazy" width="646" height="485"
+                                <img alt="Soluciones estrategicas para optimizar activos inmobiliarios" loading="lazy" width="646" height="485"
                                     className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                                     style={{ color: 'transparent' }}
                                     src="/img/soluciones.jpg">
@@ -196,7 +196,7 @@ export default function Servicios() {
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img alt="Inbox user interface" loading="lazy" width="647" height="486"
+                                <img alt="Renegociacion de contratos inmobiliarios con acompanamiento experto" loading="lazy" width="647" height="486"
                                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                                     style={{ color: 'transparent' }} src="/img/negociacion.jpg">
                                 </img>
@@ -239,7 +239,7 @@ export default function Servicios() {
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img loading="lazy" width="647" height="486"
+                                <img alt="Proteccion de escrituras para seguridad patrimonial" loading="lazy" width="647" height="486"
                                     className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                                     style={{ color: 'transparent' }} src="/img/escrituras.jpg">
                                 </img>
@@ -281,7 +281,7 @@ export default function Servicios() {
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img alt="Inbox user interface" loading="lazy" width="647" height="486"
+                                <img alt="Investigacion de propiedades para decisiones de inversion" loading="lazy" width="647" height="486"
                                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                                     style={{ color: 'transparent' }} src="/img/search.jpg">
                                 </img>

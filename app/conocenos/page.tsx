@@ -43,7 +43,7 @@ export default function Conocenos() {
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
                                 <p className="text-base font-semibold leading-7 text-mainAzul-100">Cassad</p>
-                                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Quiénes Somos</h1>
+                                <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Quiénes Somos</h2>
                                 <p className="mt-6 text-xl leading-8 text-gray-700">
                                     Nos dedicamos a diagnosticar situaciones y problemáticas inmobiliarias y legales para satisfacer las necesidades de nuestros clientes. Con una experiencia sólida de más de una década en el sector, nos esforzamos por brindar un servicio personalizado que se adapte a las necesidades individuales de cada cliente.
                                 </p>
@@ -51,7 +51,7 @@ export default function Conocenos() {
                         </div>
                     </div>
                     <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                        <img className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/img/bodegas.jpg" alt=""></img>
+                        <img className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/img/bodegas.jpg" alt="Instalaciones industriales para gestion inmobiliaria"></img>
                     </div>
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">

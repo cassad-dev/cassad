@@ -79,7 +79,7 @@ export default function Estrategias() {
                             <p>Evaluación exhaustiva de las propiedades para identificar oportunidades y riesgos. Desarrollo de proyectos y planes de acción personalizados para maximizar el valor y el rendimiento.</p>
                         </div>
                     </div>
-                    <img src="/img/E_casas_modelo.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                    <img src="/img/E_casas_modelo.jpg" alt="Modelos de viviendas para evaluacion de desarrollo inmobiliario" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
                 </li>
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
@@ -90,7 +90,7 @@ export default function Estrategias() {
                             <p>Resolución de problemas inmobiliarios complejos sin recurrir a litigios costosos y prolongados. Implementación de estrategias fiscales y económicas para optimizar los beneficios de los inmuebles.</p>
                         </div>
                     </div>
-                    <img src="/img/E_analisis.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                    <img src="/img/E_analisis.jpg" alt="Analisis de datos para estrategias fiscales inmobiliarias" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
                 </li>
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
@@ -101,7 +101,7 @@ export default function Estrategias() {
                             <p>Investigación detallada de propiedades para identificar posibles problemas legales o fiscales. Alertas inmobiliarias y recomendaciones para garantizar una inversión segura y rentable.</p>
                         </div>
                     </div>
-                    <img src="/img/E_llave_puerta.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                    <img src="/img/E_llave_puerta.jpg" alt="Llave de propiedad para inversion inmobiliaria segura" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
                 </li>
 
                 <li className="relative flex flex-col sm:flex-row lg:flex-col items-start">
@@ -112,7 +112,7 @@ export default function Estrategias() {
                             <p>Diseño y desarrollo de proyectos legales para una gestión eficiente y efectiva de la información y los casos. Implementación de sistemas de medición de procesos para garantizar un seguimiento y control adecuados.</p>
                         </div>
                     </div>
-                    <img src="/img/E_planta.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
+                    <img src="/img/E_planta.jpg" alt="Plano de planta para planeacion legal de administracion" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-6 lg:w-full" width="1216" height="640" />
                 </li>
 
             </ul>

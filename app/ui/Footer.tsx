@@ -4,19 +4,19 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="max-w-screen-xl mx-auto px-6 pt-16 pb-8">
+      <div className="max-w-screen-xl mx-auto px-6 pt-10 lg:pt-16 pb-6 lg:pb-8">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-10 lg:mb-16">
 
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-6">
-              <Image src="/logos/logo_blanco.png" height={30} width={90} alt="Cassad" />
+            <Link href="/" className="inline-block mb-5">
+              <Image src="/logos/logo_blanco.png" height={28} width={84} alt="Cassad" />
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
               Soluciones legales e inmobiliarias con visión tecnológica. Monterrey, Nuevo León, México.
             </p>
-            <div className="flex items-center gap-3 mt-8">
+            <div className="flex items-center gap-3 mt-6 lg:mt-8">
               <Link
                 href="https://www.linkedin.com/company/cassad-proptech/"
                 target="_blank"
@@ -43,10 +43,10 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-white text-[11px] font-semibold tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-white text-[11px] font-semibold tracking-[0.2em] uppercase mb-4 lg:mb-6">
               Navegación
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 lg:space-y-3">
               {[
                 { label: 'Inicio', href: '/' },
                 { label: 'Conócenos', href: '/conocenos' },
@@ -55,10 +55,7 @@ export default function Footer() {
                 { label: 'Estrategias', href: '/estrategias' },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-gray-500 text-sm hover:text-white transition-colors"
-                  >
+                  <Link href={item.href} className="text-gray-500 text-sm hover:text-white transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -68,10 +65,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white text-[11px] font-semibold tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-white text-[11px] font-semibold tracking-[0.2em] uppercase mb-4 lg:mb-6">
               Servicios
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 lg:space-y-3">
               {[
                 { label: 'Administración de Propiedades', href: '/servicios#administracionPropiedades' },
                 { label: 'Representación de Propietarios', href: '/servicios#representacionPropiedades' },
@@ -81,10 +78,7 @@ export default function Footer() {
                 { label: 'Investigación de Propiedades', href: '/servicios#investigacionPropiedades' },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-gray-500 text-sm hover:text-white transition-colors"
-                  >
+                  <Link href={item.href} className="text-gray-500 text-sm hover:text-white transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -95,7 +89,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-gray-800 pt-6 lg:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-600 text-sm">
             © {new Date().getFullYear()} Cassad. Todos los derechos reservados.
           </p>

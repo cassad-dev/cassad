@@ -61,15 +61,15 @@ export default function Servicios() {
       <NavBar />
 
       {/* PAGE HERO */}
-      <section className="bg-cassad-blue py-24 lg:py-32">
+      <section className="bg-cassad-blue py-14 lg:py-32">
         <div className="max-w-screen-xl mx-auto px-6">
-          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-6">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-4">
             Cassad
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-2xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-2xl">
             Nuestros Servicios
           </h1>
-          <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-2xl">
+          <p className="mt-4 lg:mt-6 text-sm lg:text-lg text-white/60 leading-relaxed max-w-2xl">
             Soluciones especializadas y estratégicas para gestionar, proteger y optimizar su patrimonio inmobiliario con confianza y seguridad.
           </p>
         </div>
@@ -83,20 +83,20 @@ export default function Servicios() {
             <section
               key={service.id}
               id={service.id}
-              className={`py-24 lg:py-32 border-b border-gray-100 ${isEven ? 'bg-white' : 'bg-gray-50'}`}
+              className={`py-12 lg:py-28 border-b border-gray-100 ${isEven ? 'bg-white' : 'bg-gray-50'}`}
             >
               <div className="max-w-screen-xl mx-auto px-6">
-                <div className={`grid lg:grid-cols-2 gap-16 items-center ${!isEven ? 'lg:[&>div:first-child]:order-2' : ''}`}>
+                <div className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${!isEven ? 'lg:[&>div:first-child]:order-2' : ''}`}>
 
                   {/* Text */}
                   <div>
-                    <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-6">
+                    <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-3 lg:mb-6">
                       {service.number}
                     </p>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
+                    <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 lg:mb-8 leading-tight">
                       {service.title}
                     </h2>
-                    <p className="text-gray-500 leading-relaxed text-lg">
+                    <p className="text-gray-500 leading-relaxed text-sm lg:text-base">
                       {service.description}
                     </p>
                   </div>
@@ -111,7 +111,7 @@ export default function Servicios() {
                       loading="lazy"
                     />
                     <div
-                      className={`absolute ${isEven ? '-bottom-4 -right-4' : '-bottom-4 -left-4'} w-20 h-20 pointer-events-none`}
+                      className={`absolute hidden lg:block ${isEven ? '-bottom-4 -right-4' : '-bottom-4 -left-4'} w-20 h-20 pointer-events-none`}
                       style={{ backgroundColor: 'rgba(12,64,104,0.08)' }}
                     />
                   </div>

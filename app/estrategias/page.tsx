@@ -60,37 +60,37 @@ export default function Estrategias() {
       <NavBar />
 
       {/* PAGE HERO */}
-      <section className="bg-cassad-blue py-24 lg:py-32">
+      <section className="bg-cassad-blue py-14 lg:py-32">
         <div className="max-w-screen-xl mx-auto px-6">
-          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-6">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-4">
             Cassad
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-2xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-2xl">
             Estrategias
           </h1>
-          <p className="mt-6 text-white/60 text-lg leading-relaxed max-w-2xl">
+          <p className="mt-4 lg:mt-6 text-sm lg:text-lg text-white/60 leading-relaxed max-w-2xl">
             En Cassad, desarrollamos estrategias innovadoras y personalizadas para ayudar a nuestros clientes a alcanzar sus objetivos inmobiliarios y legales con resultados exitosos y beneficios a largo plazo.
           </p>
         </div>
       </section>
 
       {/* STRATEGIES GRID */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-12 lg:py-32">
         <div className="max-w-screen-xl mx-auto px-6">
 
-          <div className="mb-16">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-4">
+          <div className="mb-8 lg:mb-16">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-3">
               Nuestro Enfoque
             </p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 max-w-lg leading-tight">
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 max-w-lg leading-tight">
               Estrategias para cada etapa de su patrimonio
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
             {strategies.map((strategy, index) => (
               <div key={index} className="group">
-                <div className="overflow-hidden mb-8">
+                <div className="overflow-hidden mb-5 lg:mb-8">
                   <img
                     src={strategy.image}
                     alt={strategy.imageAlt}
@@ -99,10 +99,10 @@ export default function Estrategias() {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-cassad-blue mb-3">
+                <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-cassad-blue mb-2 lg:mb-3">
                   {strategy.eyebrow}
                 </p>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                <h3 className="text-base lg:text-xl font-bold text-gray-900 mb-3 leading-snug">
                   {strategy.title}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
@@ -116,22 +116,22 @@ export default function Estrategias() {
       </section>
 
       {/* PRINCIPLES */}
-      <section className="py-24 lg:py-32" style={{ backgroundColor: '#f8f8f8' }}>
+      <section className="py-12 lg:py-32" style={{ backgroundColor: '#f8f8f8' }}>
         <div className="max-w-screen-xl mx-auto px-6">
 
-          <div className="mb-16">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-4">
+          <div className="mb-8 lg:mb-16">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-3">
               Cómo trabajamos
             </p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 max-w-md leading-tight">
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 max-w-md leading-tight">
               Principios de actuación
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-px bg-gray-200">
             {principles.map((principle, index) => (
-              <div key={index} className="bg-white p-10">
-                <h3 className="text-base font-bold text-gray-900 mb-4">
+              <div key={index} className="bg-white p-6 lg:p-10">
+                <h3 className="text-sm font-bold text-gray-900 mb-3">
                   {principle.title}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">

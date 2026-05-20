@@ -54,25 +54,25 @@ export default function Home() {
         }}
       >
         <div className="max-w-screen-xl mx-auto px-6 w-full">
-          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/50 mb-10">
+          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-white/50 mb-5 lg:mb-10">
             Monterrey, México&nbsp;&nbsp;·&nbsp;&nbsp;Proptech &amp; Consultoría Legal
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold text-white leading-[1.08] tracking-tight mb-8 max-w-4xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold text-white leading-[1.08] tracking-tight mb-4 lg:mb-8 max-w-4xl">
             Protección, diagnóstico y estrategia para tu patrimonio inmobiliario
           </h1>
-          <p className="text-lg text-white/65 max-w-2xl mb-12 leading-relaxed font-light">
+          <p className="text-base lg:text-lg text-white/65 max-w-2xl mb-8 lg:mb-12 leading-relaxed font-light">
             Más de una década acompañando a propietarios con soluciones legales, análisis estratégico y gestión integral de activos inmobiliarios.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 lg:gap-4">
             <Link
               href="/servicios"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 lg:px-8 lg:py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
             >
               Nuestros Servicios
             </Link>
             <Link
               href="#contacto"
-              className="inline-flex items-center justify-center px-8 py-4 border border-white/40 text-white font-semibold text-[11px] tracking-[0.2em] uppercase hover:border-white/70 hover:bg-white/5 transition-all duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 lg:px-8 lg:py-4 border border-white/40 text-white font-semibold text-[11px] tracking-[0.2em] uppercase hover:border-white/70 hover:bg-white/5 transition-all duration-200"
             >
               Contáctanos
             </Link>
@@ -81,40 +81,40 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-12 lg:py-32">
         <div className="max-w-screen-xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-8">
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-5 lg:mb-8">
                 Quiénes Somos
               </p>
               <Image
                 src="/logos/logo_azul.png"
                 alt="Cassad"
-                width={180}
-                height={60}
-                className="mb-10"
+                width={160}
+                height={53}
+                className="mb-6 lg:mb-10"
               />
-              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+              <p className="text-gray-700 text-base lg:text-lg leading-relaxed mb-4">
                 Cassad ofrece soluciones integrales en servicios inmobiliarios y legales con más de 10 años de experiencia. Destacamos en gestión de propiedades, negociación de contratos y protección de activos.
               </p>
-              <p className="text-gray-400 leading-relaxed mb-12">
+              <p className="text-gray-400 text-sm lg:text-base leading-relaxed mb-8 lg:mb-12">
                 Nos diferenciamos por la atención personalizada, el análisis multidisciplinario y un enfoque orientado a la protección real de su patrimonio.
               </p>
-              <div className="grid grid-cols-2 gap-8">
-                <div className="border-l-2 border-cassad-blue pl-6">
-                  <p className="text-4xl font-bold text-cassad-blue">+10</p>
-                  <p className="text-sm text-gray-400 mt-1 tracking-wide">Años de experiencia</p>
+              <div className="grid grid-cols-2 gap-6 lg:gap-8">
+                <div className="border-l-2 border-cassad-blue pl-4 lg:pl-6">
+                  <p className="text-3xl lg:text-4xl font-bold text-cassad-blue">+10</p>
+                  <p className="text-xs lg:text-sm text-gray-400 mt-1 tracking-wide">Años de experiencia</p>
                 </div>
-                <div className="border-l-2 border-gray-200 pl-6">
-                  <p className="text-4xl font-bold text-gray-900">6</p>
-                  <p className="text-sm text-gray-400 mt-1 tracking-wide">Servicios especializados</p>
+                <div className="border-l-2 border-gray-200 pl-4 lg:pl-6">
+                  <p className="text-3xl lg:text-4xl font-bold text-gray-900">6</p>
+                  <p className="text-xs lg:text-sm text-gray-400 mt-1 tracking-wide">Servicios especializados</p>
                 </div>
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative hidden lg:block">
               <img
                 src="/home.jpg"
                 alt="Asesoría profesional en soluciones legales e inmobiliarias"
@@ -132,46 +132,45 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-24 lg:py-32" style={{ backgroundColor: '#f8f8f8' }}>
+      <section className="py-12 lg:py-32" style={{ backgroundColor: '#f8f8f8' }}>
         <div className="max-w-screen-xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-[1fr_2fr] gap-16 mb-16">
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-6 lg:gap-16 mb-8 lg:mb-16">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-4">
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-cassad-blue mb-3 lg:mb-4">
                 Lo que ofrecemos
               </p>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight">
                 Servicios especializados para su patrimonio
               </h2>
             </div>
             <div className="lg:pt-10">
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-sm lg:text-base text-gray-500 leading-relaxed">
                 Cada servicio está diseñado para brindar certeza jurídica, protección patrimonial y acompañamiento estratégico a propietarios e inversionistas.
               </p>
             </div>
           </div>
 
-          {/* Cards grid — gap-px with bg-gray-200 creates thin divider lines */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
             {services.map((service) => (
               <div
                 key={service.number}
-                className="group bg-white p-10 hover:bg-cassad-blue transition-colors duration-300 cursor-default"
+                className="group bg-white p-6 lg:p-10 hover:bg-cassad-blue transition-colors duration-300 cursor-default"
               >
-                <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-cassad-blue group-hover:text-white/40 mb-6">
+                <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-cassad-blue group-hover:text-white/40 mb-4 lg:mb-6">
                   {service.number}
                 </p>
-                <h3 className="text-base font-bold text-gray-900 group-hover:text-white mb-4 leading-snug">
+                <h3 className="text-sm lg:text-base font-bold text-gray-900 group-hover:text-white mb-3 lg:mb-4 leading-snug">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-500 group-hover:text-white/70 leading-relaxed">
+                <p className="text-xs lg:text-sm text-gray-500 group-hover:text-white/70 leading-relaxed">
                   {service.description}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-8 lg:mt-12 text-center">
             <Link
               href="/servicios"
               className="inline-flex items-center gap-2 text-sm font-semibold text-cassad-blue tracking-[0.08em] uppercase hover:gap-4 transition-all duration-200"
@@ -187,21 +186,21 @@ export default function Home() {
       </section>
 
       {/* CTA BLOCK */}
-      <section className="bg-cassad-blue py-24 lg:py-32">
+      <section className="bg-cassad-blue py-12 lg:py-32">
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="max-w-3xl">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-8">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-white/40 mb-5 lg:mb-8">
               Acompañamiento estratégico
             </p>
-            <h2 className="text-3xl lg:text-5xl font-bold text-white leading-tight mb-8">
+            <h2 className="text-2xl lg:text-5xl font-bold text-white leading-tight mb-4 lg:mb-8">
               Cada propiedad tiene una historia. Nosotros la protegemos.
             </h2>
-            <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl">
+            <p className="text-white/60 text-sm lg:text-lg leading-relaxed mb-8 lg:mb-12 max-w-xl">
               Diagnóstico multidisciplinario, protección de activos y acompañamiento estratégico para personas y empresas en Monterrey y su área metropolitana.
             </p>
             <Link
               href="#contacto"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 lg:px-8 lg:py-4 bg-white text-cassad-blue font-semibold text-[11px] tracking-[0.2em] uppercase hover:bg-gray-50 transition-colors duration-200"
             >
               Iniciar Diagnóstico
             </Link>
@@ -215,26 +214,26 @@ export default function Home() {
       </div>
 
       {/* CLIENT LOGOS */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-10 lg:py-16 bg-white border-t border-gray-100">
         <div className="max-w-screen-xl mx-auto px-6">
-          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gray-400 text-center mb-10">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gray-400 text-center mb-6 lg:mb-10">
             Algunos de nuestros clientes
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-16">
+          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
             <img
               src="/logos/believebytere-logo.png"
               alt="Believe By Tere"
-              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+              className="h-10 lg:h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
             />
             <img
               src="/logos/fanatiker-logo.png"
               alt="Fanatiker"
-              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+              className="h-10 lg:h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
             />
             <img
               src="/logos/grupolomex-logo.png"
               alt="Grupo Lomex"
-              className="h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
+              className="h-10 lg:h-12 object-contain opacity-50 hover:opacity-80 transition-opacity"
             />
           </div>
         </div>

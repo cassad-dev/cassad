@@ -86,7 +86,7 @@ export default function ContactForm() {
                   id="name"
                   type="text"
                   placeholder="Tu nombre completo"
-                  className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors bg-white"
+                  className="w-full border border-gray-200 px-4 py-3 text-base text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors bg-white"
                   {...register('name', { required: true })}
                   required
                 />
@@ -100,7 +100,7 @@ export default function ContactForm() {
                   id="email"
                   type="email"
                   placeholder="ejemplo@correo.com"
-                  className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors bg-white"
+                  className="w-full border border-gray-200 px-4 py-3 text-base text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors bg-white"
                   {...register('email', { required: true })}
                   required
                 />
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   id="message"
                   rows={5}
                   placeholder="Cuéntanos sobre tu propiedad o situación..."
-                  className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors resize-none bg-white"
+                  className="w-full border border-gray-200 px-4 py-3 text-base text-gray-900 placeholder-gray-300 focus:outline-none focus:border-cassad-blue transition-colors resize-none bg-white"
                   {...register('message', { required: true })}
                   required
                 />
